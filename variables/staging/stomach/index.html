@@ -1,0 +1,7652 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Unofficial documentation for the cancer and health data released through the Korean K-CURE portal">
+      
+      
+        <meta name="author" content="Siho Park">
+      
+      
+        <link rel="canonical" href="https://siho-park.github.io/kcure-documentation/variables/staging/stomach/">
+      
+      
+        <link rel="prev" href="../../sample/pancreas/">
+      
+      
+        <link rel="next" href="../breast/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+  
+    
+      
+        <title>Stomach staging sample - K-CURE Data Documentation</title>
+      
+    
+  
+
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans KR";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#stomach-staging-sample" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="K-CURE Data Documentation" class="md-header__button md-logo" aria-label="K-CURE Data Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            K-CURE Data Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Stomach staging sample
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/siho-park/kcure-documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kcure-documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Program and data
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../datasets/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Datasets
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Variables
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Research notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../glossary/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../references/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  References
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="K-CURE Data Documentation" class="md-nav__button md-logo" aria-label="K-CURE Data Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    K-CURE Data Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/siho-park/kcure-documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    kcure-documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/cite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to cite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../overview/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Program and data
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Program and data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The K-CURE project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/products/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What the portal releases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Applying for data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/using/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using the data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../datasets/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Datasets
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Datasets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../datasets/public-library/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cancer Public Library
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cancer Public Library
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/rgst/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cancer registration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/death/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Death
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/bfc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eligibility and premium
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_5" id="__nav_3_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claims
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Claims
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/t200/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claim statement (T200)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/t300/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Services (T300)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/t400/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagnoses (T400)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/t530/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outpatient prescriptions (T530)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_6" id="__nav_3_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General health examination
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    General health examination
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/g1e-obj/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checkup target (G1E_OBJ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/g1q-0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Questionnaire, 2007–2008 (G1Q_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/g1q-0917/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Questionnaire, 2009–2017 (G1Q_0917)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/g1q-1824/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Questionnaire, 2018–2024 (G1Q_1824)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/g1e/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Results (G1E)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_7" id="__nav_3_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cancer screening
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cancer screening
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/cq-rst-0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Questionnaire, 2007–2008 (CQ_RST_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/cq-rst-0924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Questionnaire, 2009–2024 (CQ_RST_0924)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/cbr-rst-0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Breast, 2007–2008 (CBR_RST_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/cbr-rst-0924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Breast, 2009–2024 (CBR_RST_0924)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/ccr-rst-0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Colorectal, 2007–2008 (CCR_RST_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/ccr-rst-0924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Colorectal, 2009–2024 (CCR_RST_0924)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/ccx-rst-0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cervical, 2007–2008 (CCX_RST_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/ccx-rst-0924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cervical, 2009–2024 (CCX_RST_0924)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/clv-rst-0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Liver, 2007–2008 (CLV_RST_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/clv-rst-0924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Liver, 2009–2024 (CLV_RST_0924)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/cst-rst-0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stomach, 2007–2008 (CST_RST_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/cst-rst-0924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stomach, 2009–2024 (CST_RST_0924)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_8" id="__nav_3_2_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COVID-19
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    COVID-19
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/covid-pt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cases (COVID_PT)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/covid-vac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vaccination (COVID_VAC)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/public-library/sample/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sample
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../datasets/clinical/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clinical library
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Clinical library
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/clinical/cncr-rgst/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hospital cancer registration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/combined/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Combined library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/specialized/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Specialized data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/health/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Health and medical data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datasets/sources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sources and versions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Variables
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Variables
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../public-library/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cancer Public Library
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cancer Public Library
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/rgst/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cancer registration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/death/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Death
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/bfc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eligibility and premium
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_5" id="__nav_4_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claims
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Claims
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/t200/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claim statement (T200)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/t300/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Services (T300)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/t400/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagnoses (T400)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/t530/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outpatient prescriptions (T530)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_6" id="__nav_4_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General health examination
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    General health examination
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/g1e_obj/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checkup target (G1E_OBJ)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/g1q_0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Questionnaire, 2007–2008 (G1Q_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/g1q_0917/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Questionnaire, 2009–2017 (G1Q_0917)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/g1q_1824/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Questionnaire, 2018–2024 (G1Q_1824)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/g1e/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Results (G1E)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_7" id="__nav_4_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cancer screening
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cancer screening
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/cq_rst_0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Questionnaire, 2007–2008 (CQ_RST_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/cq_rst_0924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Questionnaire, 2009–2024 (CQ_RST_0924)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/cbr_rst_0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Breast, 2007–2008 (CBR_RST_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/cbr_rst_0924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Breast, 2009–2024 (CBR_RST_0924)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/ccr_rst_0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Colorectal, 2007–2008 (CCR_RST_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/ccr_rst_0924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Colorectal, 2009–2024 (CCR_RST_0924)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/ccx_rst_0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cervical, 2007–2008 (CCX_RST_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/ccx_rst_0924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cervical, 2009–2024 (CCX_RST_0924)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/clv_rst_0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Liver, 2007–2008 (CLV_RST_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/clv_rst_0924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Liver, 2009–2024 (CLV_RST_0924)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/cst_rst_0708/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stomach, 2007–2008 (CST_RST_0708)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/cst_rst_0924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stomach, 2009–2024 (CST_RST_0924)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_8" id="__nav_4_2_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COVID-19
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    COVID-19
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/covid_pt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cases (COVID_PT)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../public-library/covid_vac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vaccination (COVID_VAC)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Site samples (표본)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Site samples (표본)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sample/stomach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stomach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sample/breast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Breast
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sample/colorectal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Colorectal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sample/liver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Liver
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sample/lung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sample/pancreas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pancreas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Staging samples (표본 병기)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Staging samples (표본 병기)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stomach
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stomach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cancer-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cancer registration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#death" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Death
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eligibility-and-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eligibility and premium
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#claim-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claim statement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Services
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagnoses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnoses
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outpatient-prescriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outpatient prescriptions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkup-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkup target
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkup-questionnaire-20072008" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkup questionnaire, 2007–2008
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkup-questionnaire-20092017" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkup questionnaire, 2009–2017
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkup-questionnaire-20182023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkup questionnaire, 2018–2023
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkup-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkup results
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stomach-screening-questionnaire-20072008" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stomach screening questionnaire, 2007–2008
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stomach-screening-questionnaire-20092023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stomach screening questionnaire, 2009–2023
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stomach-screening-results-20072008" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stomach screening results, 2007–2008
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stomach-screening-results-20092023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stomach screening results, 2009–2023
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../breast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Breast
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../colorectal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Colorectal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../liver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Liver
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../blog/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research notes
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cancer-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cancer registration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#death" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Death
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eligibility-and-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eligibility and premium
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#claim-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Claim statement
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Services
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagnoses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnoses
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outpatient-prescriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outpatient prescriptions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkup-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkup target
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkup-questionnaire-20072008" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkup questionnaire, 2007–2008
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkup-questionnaire-20092017" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkup questionnaire, 2009–2017
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkup-questionnaire-20182023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkup questionnaire, 2018–2023
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkup-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkup results
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stomach-screening-questionnaire-20072008" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stomach screening questionnaire, 2007–2008
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stomach-screening-questionnaire-20092023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stomach screening questionnaire, 2009–2023
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stomach-screening-results-20072008" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stomach screening results, 2007–2008
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stomach-screening-results-20092023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stomach screening results, 2009–2023
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/siho-park/kcure-documentation/edit/main/codebook/catalogs.json" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<p><a href="../../">Variables</a></p>
+<h1 id="stomach-staging-sample">Stomach staging sample<a class="headerlink" href="#stomach-staging-sample" title="Permanent link">&para;</a></h1>
+<p>위암 표본 병기. 16 tables, 559 variables in the portal catalog.</p>
+<p>This is a staging sample (표본 병기). 병기 means stage. It is a separate database from the <a href="../../sample/stomach/">site sample</a>. Death, eligibility, claims, the checkup, and screening, where this catalog includes them, match the site sample. The registration table is the staging-survey record for this site. How the two databases differ is on the <a href="../../../datasets/public-library/sample/">sample page</a>.</p>
+<p><code>DBYEAR</code> (자료등록연도) is the year the record was registered. It is not the year of birth. <code>AGE</code> is age at diagnosis. <code>FDX</code> on this table is the year and month of the first diagnosis.</p>
+<p>※ 상세코드는 중앙암등록본부 협력병기 조사자료 이용자 안내서 참고</p>
+<p>On the code sheet, recorded validity runs from 2007 through 2023.</p>
+<p>The catalog does not list <code>SN_KEY</code>. Claim lines list <code>MID</code>.</p>
+<h2 id="cancer-registration">Cancer registration<a class="headerlink" href="#cancer-registration" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_암등록. File <code>CS_GC_RGST</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_rgst/dbyear/"><code>DBYEAR</code></a></td>
+<td>자료등록연도</td>
+<td>Year the record was registered</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/sex/"><code>SEX</code></a></td>
+<td>성별</td>
+<td>Sex</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/fdx/"><code>FDX</code></a></td>
+<td>최초진단연월</td>
+<td>Year and month of first diagnosis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/tcode/"><code>TCODE</code></a></td>
+<td>원발부위코드</td>
+<td>Primary site code</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/mcode/"><code>MCODE</code></a></td>
+<td>조직학적진단코드</td>
+<td>Histology code</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/grade/"><code>GRADE</code></a></td>
+<td>분화도</td>
+<td>Grade</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/age/"><code>AGE</code></a></td>
+<td>진단시 만나이</td>
+<td>Age in full years at diagnosis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/t_size/"><code>T_SIZE</code></a></td>
+<td>종양의 크기 원발종양의 최대길이 또는 최대직경</td>
+<td>Size of the primary tumor, maximum length or diameter</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ext/"><code>EXT</code></a></td>
+<td>종양이 퍼진 정도-원발부위 내 종양침범 또는 인접 기관 내에 직접 침범 유무</td>
+<td>Extension of the primary tumor, within the organ or into an adjacent organ</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/exteval/"><code>EXTEVAL</code></a></td>
+<td>종양의 크기와 퍼진 정도의 결정 방법</td>
+<td>How size and extension were determined</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/nodes/"><code>NODES</code></a></td>
+<td>침범된 국소림프절-침범된 종류, 범위</td>
+<td>Regional nodes involved, and the kind and extent of involvement</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/nodeseval/"><code>NODESEVAL</code></a></td>
+<td>국소림프절 침범 여부의 결정 방법</td>
+<td>How node involvement was determined</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/lnpos/"><code>LNPOS</code></a></td>
+<td>병리검사 결과 양성으로 진단된 국소림프절의 개수</td>
+<td>Number of regional nodes positive on pathology</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/lnexam/"><code>LNEXAM</code></a></td>
+<td>병리검사에서 검사된 국소림프절의 총 개수</td>
+<td>Number of regional nodes examined</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/mets/"><code>METS</code></a></td>
+<td>원격전이 부위</td>
+<td>Site of distant metastasis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/metseval/"><code>METSEVAL</code></a></td>
+<td>원격전이 부위의 결정 방법</td>
+<td>How the metastatic site was determined</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ssf1/"><code>SSF1</code></a></td>
+<td>Site-Specific Factor (SSF) 1</td>
+<td>Site-Specific Factor (SSF) 1</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ssf2/"><code>SSF2</code></a></td>
+<td>Site-Specific Factor (SSF) 2</td>
+<td>Site-Specific Factor (SSF) 2</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ssf3/"><code>SSF3</code></a></td>
+<td>Site-Specific Factor (SSF) 3</td>
+<td>Site-Specific Factor (SSF) 3</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ssf4/"><code>SSF4</code></a></td>
+<td>Site-Specific Factor (SSF) 4</td>
+<td>Site-Specific Factor (SSF) 4</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ssf5/"><code>SSF5</code></a></td>
+<td>Site-Specific Factor (SSF) 5</td>
+<td>Site-Specific Factor (SSF) 5</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ssf13/"><code>SSF13</code></a></td>
+<td>Site-Specific Factor (SSF) 13</td>
+<td>Site-Specific Factor (SSF) 13</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ssf14/"><code>SSF14</code></a></td>
+<td>Site-Specific Factor (SSF) 14</td>
+<td>Site-Specific Factor (SSF) 14</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ssf15/"><code>SSF15</code></a></td>
+<td>Site-Specific Factor (SSF) 15</td>
+<td>Site-Specific Factor (SSF) 15</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ssf25/"><code>SSF25</code></a></td>
+<td>Site-Specific Factor (SSF) 25</td>
+<td>Site-Specific Factor (SSF) 25</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc6_t/"><code>AJCC6_T</code></a></td>
+<td>Derived AJCC-6 T</td>
+<td>Derived AJCC-6 T</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc6_teval/"><code>AJCC6_TEVAL</code></a></td>
+<td>Derived AJCC-6 T Descript</td>
+<td>Derived AJCC-6 T Descript</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc6_n/"><code>AJCC6_N</code></a></td>
+<td>Derived AJCC-6 N</td>
+<td>Derived AJCC-6 N</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc6_neval/"><code>AJCC6_NEVAL</code></a></td>
+<td>Derived AJCC-6 N Descript</td>
+<td>Derived AJCC-6 N Descript</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc6_m/"><code>AJCC6_M</code></a></td>
+<td>Derived AJCC-6 M</td>
+<td>Derived AJCC-6 M</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc6_meval/"><code>AJCC6_MEVAL</code></a></td>
+<td>Derived AJCC-6 M Descript</td>
+<td>Derived AJCC-6 M Descript</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc6_stage/"><code>AJCC6_STAGE</code></a></td>
+<td>Derived AJCC-6 Stage Grp</td>
+<td>Derived AJCC-6 Stage Grp</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc7_t/"><code>AJCC7_T</code></a></td>
+<td>Derived AJCC-7 T</td>
+<td>Derived AJCC-7 T</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc7_teval/"><code>AJCC7_TEVAL</code></a></td>
+<td>Derived AJCC-7 T Descript</td>
+<td>Derived AJCC-7 T Descript</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc7_n/"><code>AJCC7_N</code></a></td>
+<td>Derived AJCC-7 N</td>
+<td>Derived AJCC-7 N</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc7_neval/"><code>AJCC7_NEVAL</code></a></td>
+<td>Derived AJCC-7 N Descript</td>
+<td>Derived AJCC-7 N Descript</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc7_m/"><code>AJCC7_M</code></a></td>
+<td>Derived AJCC-7 M</td>
+<td>Derived AJCC-7 M</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc7_meval/"><code>AJCC7_MEVAL</code></a></td>
+<td>Derived AJCC-7 M Descript</td>
+<td>Derived AJCC-7 M Descript</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ajcc7_stage/"><code>AJCC7_STAGE</code></a></td>
+<td>Derived AJCC-7 Stage Grp</td>
+<td>Derived AJCC-7 Stage Grp</td>
+</tr>
+<tr>
+<td><a href="cs_gc_rgst/ss2000/"><code>SS2000</code></a></td>
+<td>Summary Stage 2000</td>
+<td>Summary Stage 2000</td>
+</tr>
+</tbody>
+</table>
+<h2 id="death">Death<a class="headerlink" href="#death" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_사망. File <code>CS_GC_DEATH</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_death/dregdate/"><code>DREGDATE</code></a></td>
+<td>사망연월일</td>
+<td>Date of death</td>
+</tr>
+<tr>
+<td><a href="cs_gc_death/sain1/"><code>SAIN1</code></a></td>
+<td>사망원인코드1</td>
+<td>Underlying cause of death</td>
+</tr>
+<tr>
+<td><a href="cs_gc_death/sain2/"><code>SAIN2</code></a></td>
+<td>사망원인코드2</td>
+<td>External cause of death</td>
+</tr>
+</tbody>
+</table>
+<h2 id="eligibility-and-premium">Eligibility and premium<a class="headerlink" href="#eligibility-and-premium" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_자격및보험료. File <code>CS_GC_BFC</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_bfc/std_yyyy/"><code>STD_YYYY</code></a></td>
+<td>기준연도</td>
+<td>Reference year</td>
+</tr>
+<tr>
+<td><a href="cs_gc_bfc/gaibja_type/"><code>GAIBJA_TYPE</code></a></td>
+<td>가입자 구분</td>
+<td>Eligibility type</td>
+</tr>
+<tr>
+<td><a href="cs_gc_bfc/sido_cd/"><code>SIDO_CD</code></a></td>
+<td>실거주주소코드</td>
+<td>Province of residence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_bfc/calc_ctrb_vtile_fd/"><code>CALC_CTRB_VTILE_FD</code></a></td>
+<td>보험료</td>
+<td>Insurance premium decile</td>
+</tr>
+<tr>
+<td><a href="cs_gc_bfc/cmpr_dsb_grade_adj/"><code>CMPR_DSB_GRADE_ADJ</code></a></td>
+<td>종합장애등급코드</td>
+<td>Overall disability grade</td>
+</tr>
+<tr>
+<td><a href="cs_gc_bfc/main_dsb_type_adj/"><code>MAIN_DSB_TYPE_ADJ</code></a></td>
+<td>주장애 유형</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="claim-statement">Claim statement<a class="headerlink" href="#claim-statement" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_명세서일반내역. File <code>CS_GC_T200</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_t200/mid/"><code>MID</code></a></td>
+<td>명세서조인키</td>
+<td>Claim join key</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/yid/"><code>YID</code></a></td>
+<td>요양기관식별대체키</td>
+<td>Provider substitute identifier</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/cl_cd/"><code>CL_CD</code></a></td>
+<td>요양기관종별구분코드</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/rvd_plc_cd/"><code>RVD_PLC_CD</code></a></td>
+<td>요양기관기호지역구분코드</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/fom_tp_cd/"><code>FOM_TP_CD</code></a></td>
+<td>서식구분코드</td>
+<td>Claim form type</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/m_sick_cd/"><code>M_SICK_CD</code></a></td>
+<td>주상병코드</td>
+<td>Primary diagnosis code</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/sub_sick_cd/"><code>SUB_SICK_CD</code></a></td>
+<td>부상병코드</td>
+<td>Secondary diagnosis code</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/dgsbjt_cd/"><code>DGSBJT_CD</code></a></td>
+<td>진료과목코드</td>
+<td>Specialty code</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/recu_fr_dd/"><code>RECU_FR_DD</code></a></td>
+<td>요양개시일자</td>
+<td>Care start date</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/recu_to_dd/"><code>RECU_TO_DD</code></a></td>
+<td>요양종료일자</td>
+<td>Care end date</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/fst_ipat_dd/"><code>FST_IPAT_DD</code></a></td>
+<td>최초입원일자</td>
+<td>First admission date</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/vst_ddcnt/"><code>VST_DDCNT</code></a></td>
+<td>입내원일수</td>
+<td>Days of visit or admission</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/recu_ddcnt/"><code>RECU_DDCNT</code></a></td>
+<td>요양일수</td>
+<td>Days of care</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/oprsc_ddcnt/"><code>OPRSC_DDCNT</code></a></td>
+<td>원외처방일수</td>
+<td>Outpatient prescription days</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/oprscd_cnt/"><code>OPRSCD_CNT</code></a></td>
+<td>원외처방전건수</td>
+<td>Number of outpatient prescriptions</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/rvd_rpe_tamt_amt/"><code>RVD_RPE_TAMT_AMT</code></a></td>
+<td>심사결정요양급여비용총액</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/sopr_yn/"><code>SOPR_YN</code></a></td>
+<td>수술여부</td>
+<td>Surgery</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/oinj_tp_cd/"><code>OINJ_TP_CD</code></a></td>
+<td>공상구분코드</td>
+<td>Official injury or illness category</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/prcl_sym_tp_cd/"><code>PRCL_SYM_TP_CD</code></a></td>
+<td>특정기호구분코드</td>
+<td>Special symbol code</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/dgrslt_tp_cd/"><code>DGRSLT_TP_CD</code></a></td>
+<td>진료결과구분코드</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/ipat_ariv_pth_tp/"><code>IPAT_ARIV_PTH_TP</code></a></td>
+<td>입원도착경로구분코드</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_t200/shw_sbjt_cd/"><code>SHW_SBJT_CD</code></a></td>
+<td>표시과목코드</td>
+<td>Listed specialty code</td>
+</tr>
+</tbody>
+</table>
+<h2 id="services">Services<a class="headerlink" href="#services" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_진료내역. File <code>CS_GC_T300</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_t300/mid/"><code>MID</code></a></td>
+<td>명세서조인키</td>
+<td>Claim join key</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t300/ln_no/"><code>LN_NO</code></a></td>
+<td>줄번호</td>
+<td>Line number</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t300/cz_item_cd/"><code>CZ_ITEM_CD</code></a></td>
+<td>항목코드</td>
+<td>Item code</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t300/div_ty_cd/"><code>DIV_TY_CD</code></a></td>
+<td>분류코드구분</td>
+<td>Classification-code type</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t300/div_cd/"><code>DIV_CD</code></a></td>
+<td>분류코드</td>
+<td>Classification code</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t300/fq1_mdct_qty/"><code>FQ1_MDCT_QTY</code></a></td>
+<td>1회투약량</td>
+<td>Dose per administration</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t300/dy1_mdct_qty/"><code>DY1_MDCT_QTY</code></a></td>
+<td>1일투약량</td>
+<td>Daily dose</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t300/dy1_injc_qty_exec_fq/"><code>DY1_INJC_QTY_EXEC_FQ</code></a></td>
+<td>1일투여량 또는 실시횟수</td>
+<td>Daily dose or number of times performed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t300/tot_injc_ddcnt_exec_fq/"><code>TOT_INJC_DDCNT_EXEC_FQ</code></a></td>
+<td>총투여일수 또는 실시횟수</td>
+<td>Total days of administration or number of times performed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t300/tot_use_qty_or_exec_fq/"><code>TOT_USE_QTY_OR_EXEC_FQ</code></a></td>
+<td>총사용량</td>
+<td>Total amount used</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t300/exp_tp_cd/"><code>EXP_TP_CD</code></a></td>
+<td>진료예외구분코드</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_t300/sp1_sp2_tp_cd/"><code>SP1_SP2_TP_CD</code></a></td>
+<td>1_2구분코드</td>
+<td>Primary or secondary classification</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t300/gnl_cd/"><code>GNL_CD</code></a></td>
+<td>일반명코드</td>
+<td>Ingredient code</td>
+</tr>
+</tbody>
+</table>
+<h2 id="diagnoses">Diagnoses<a class="headerlink" href="#diagnoses" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_상병내역. File <code>CS_GC_T400</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_t400/mid/"><code>MID</code></a></td>
+<td>명세서조인키</td>
+<td>Claim join key</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t400/sick_sno/"><code>SICK_SNO</code></a></td>
+<td>일련번호</td>
+<td>Sequence number</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t400/sick_cd/"><code>SICK_CD</code></a></td>
+<td>상병코드</td>
+<td>Diagnosis code</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t400/sick_ty_cd/"><code>SICK_TY_CD</code></a></td>
+<td>상병분류구분</td>
+<td>Diagnosis classification type</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t400/dmd_dgsbjt_cd/"><code>DMD_DGSBJT_CD</code></a></td>
+<td>진료과목코드</td>
+<td>Specialty code</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t400/ifld_dtl_spc_sbjt_cd/"><code>IFLD_DTL_SPC_SBJT_CD</code></a></td>
+<td>내과세부전문과목</td>
+<td>Internal-medicine subspecialty</td>
+</tr>
+</tbody>
+</table>
+<h2 id="outpatient-prescriptions">Outpatient prescriptions<a class="headerlink" href="#outpatient-prescriptions" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_원외처방내역. File <code>CS_GC_T530</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_t530/mid/"><code>MID</code></a></td>
+<td>명세서조인키</td>
+<td>Claim join key</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t530/prscp_grant_no/"><code>PRSCP_GRANT_NO</code></a></td>
+<td>처방전교부번호</td>
+<td>Prescription issue number</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t530/ln_no/"><code>LN_NO</code></a></td>
+<td>줄번호</td>
+<td>Line number</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t530/div_ty_cd/"><code>DIV_TY_CD</code></a></td>
+<td>분류코드구분</td>
+<td>Classification-code type</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t530/div_cd/"><code>DIV_CD</code></a></td>
+<td>분류코드</td>
+<td>Classification code</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t530/fq1_mdct_qty/"><code>FQ1_MDCT_QTY</code></a></td>
+<td>1회투약량</td>
+<td>Dose per administration</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t530/dy1_mdct_qty/"><code>DY1_MDCT_QTY</code></a></td>
+<td>1일투약량</td>
+<td>Daily dose</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t530/tot_injc_ddcnt_exec_fq/"><code>TOT_INJC_DDCNT_EXEC_FQ</code></a></td>
+<td>총투여일수 또는 실시횟수</td>
+<td>Total days of administration or number of times performed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t530/tot_use_qty_or_exec_fq/"><code>TOT_USE_QTY_OR_EXEC_FQ</code></a></td>
+<td>총사용량</td>
+<td>Total amount used</td>
+</tr>
+<tr>
+<td><a href="cs_gc_t530/gnl_cd/"><code>GNL_CD</code></a></td>
+<td>일반명코드</td>
+<td>Ingredient code</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checkup-target">Checkup target<a class="headerlink" href="#checkup-target" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_일반건강검진_대상자. File <code>CS_GC_G1E_OBJ</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_g1e_obj/exmd_bz_yyyy/"><code>EXMD_BZ_YYYY</code></a></td>
+<td>검진사업연도</td>
+<td>Screening year</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e_obj/wkg_type_cd/"><code>WKG_TYPE_CD</code></a></td>
+<td>근무구분코드</td>
+<td>Work type</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checkup-questionnaire-20072008">Checkup questionnaire, 2007–2008<a class="headerlink" href="#checkup-questionnaire-20072008" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_일반건강검진_문진_0708. File <code>CS_GC_G1Q_0708</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_g1q_0708/exmd_bz_yyyy/"><code>EXMD_BZ_YYYY</code></a></td>
+<td>검진사업연도</td>
+<td>Screening year</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_phx1_dz/"><code>Q_PHX1_DZ</code></a></td>
+<td>[문진1] (본인)과거병력코드1</td>
+<td>Questionnaire 1: Own past-history code 1</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_phx1_yr/"><code>Q_PHX1_YR</code></a></td>
+<td>[문진1] (본인)과거질환발생연도1</td>
+<td>Questionnaire 1: Year of own past illness 1</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_phx1_cr/"><code>Q_PHX1_CR</code></a></td>
+<td>[문진1] (본인)과거질환완치유무1</td>
+<td>Questionnaire 1: Own past illness 1 resolved</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_phx2_dz/"><code>Q_PHX2_DZ</code></a></td>
+<td>[문진1] (본인)과거병력코드2</td>
+<td>Questionnaire 1: Own past-history code 2</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_phx2_yr/"><code>Q_PHX2_YR</code></a></td>
+<td>[문진1] (본인)과거질환발생연도2</td>
+<td>Questionnaire 1: Year of own past illness 2</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_phx2_cr/"><code>Q_PHX2_CR</code></a></td>
+<td>[문진1] (본인)과거질환완치유무2</td>
+<td>Questionnaire 1: Own past illness 2 resolved</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_phx3_dz/"><code>Q_PHX3_DZ</code></a></td>
+<td>[문진1] (본인)과거병력코드3</td>
+<td>Questionnaire 1: Own past-history code 3</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_phx3_yr/"><code>Q_PHX3_YR</code></a></td>
+<td>[문진1] (본인)과거질환발생연도3</td>
+<td>Questionnaire 1: Year of own past illness 3</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_phx3_cr/"><code>Q_PHX3_CR</code></a></td>
+<td>[문진1] (본인)과거질환완치유무3</td>
+<td>Questionnaire 1: Own past illness 3 resolved</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_fhx_lvdz/"><code>Q_FHX_LVDZ</code></a></td>
+<td>[문진2] (가족력)간장질환유무</td>
+<td>[Questionnaire 2] (family history)Liver diseasepresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_fhx_stk/"><code>Q_FHX_STK</code></a></td>
+<td>[문진2] (가족력)뇌졸중유무</td>
+<td>[Questionnaire 2] (family history)Strokepresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_fhx_htdz/"><code>Q_FHX_HTDZ</code></a></td>
+<td>[문진2] (가족력)심장병유무</td>
+<td>[Questionnaire 2] (family history)Heart diseasepresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_fhx_htn/"><code>Q_FHX_HTN</code></a></td>
+<td>[문진2] (가족력)고혈압유무</td>
+<td>[Questionnaire 2] (family history)Hypertensionpresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_fhx_dm/"><code>Q_FHX_DM</code></a></td>
+<td>[문진2] (가족력)당뇨병유무</td>
+<td>[Questionnaire 2] (family history)Diabetespresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_fhx_cc/"><code>Q_FHX_CC</code></a></td>
+<td>[문진2] (가족력)암유무</td>
+<td>[Questionnaire 2] (family history)Cancerpresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_ntr_prf/"><code>Q_NTR_PRF</code></a></td>
+<td>[문진4] 영양섭취행태</td>
+<td>Questionnaire 4: Diet</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_drk_frq_v0108/"><code>Q_DRK_FRQ_V0108</code></a></td>
+<td>[문진5] 음주습관</td>
+<td>Questionnaire 5: Drinking habit</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_drk_amt_v0108/"><code>Q_DRK_AMT_V0108</code></a></td>
+<td>[문진6] 1회 음주량</td>
+<td>Questionnaire 6: Amount per drinking occasion</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_smk_yn/"><code>Q_SMK_YN</code></a></td>
+<td>[문진7] 흡연여부</td>
+<td>Questionnaire 7: Smoking status</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_smk_now_amt_v0108/"><code>Q_SMK_NOW_AMT_V0108</code></a></td>
+<td>[문진8] (현재)하루흡연량</td>
+<td>Questionnaire 8: Cigarettes per day, current</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_smk_drt/"><code>Q_SMK_DRT</code></a></td>
+<td>[문진9] (과거,현재)흡연기간</td>
+<td>Questionnaire 9: Years smoked, past or current</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_pa_frq/"><code>Q_PA_FRQ</code></a></td>
+<td>[문진10] 1주 운동횟수</td>
+<td>Questionnaire 10: days of exercise in a week</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0708/q_mh_str/"><code>Q_MH_STR</code></a></td>
+<td>[문진11] 정신건강/스트레스</td>
+<td>Questionnaire 11: Mental health and stress</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checkup-questionnaire-20092017">Checkup questionnaire, 2009–2017<a class="headerlink" href="#checkup-questionnaire-20092017" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_일반건강검진_문진_0917. File <code>CS_GC_G1Q_0917</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_g1q_0917/exmd_bz_yyyy/"><code>EXMD_BZ_YYYY</code></a></td>
+<td>검진사업연도</td>
+<td>Screening year</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_dx_stk/"><code>Q_PHX_DX_STK</code></a></td>
+<td>[문진1] (본인) 뇌졸중(중풍) 진단여부</td>
+<td>Questionnaire 1: own history of stroke, diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_dx_htdz/"><code>Q_PHX_DX_HTDZ</code></a></td>
+<td>[문진1] (본인) 심장병(심근경색/협심증) 진단여부</td>
+<td>Questionnaire 1: own history of heart disease (myocardial infarction or angina), diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_dx_htn/"><code>Q_PHX_DX_HTN</code></a></td>
+<td>[문진1] (본인) 고혈압 진단여부</td>
+<td>[Questionnaire 1] (the person) Hypertension whether diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_dx_dm/"><code>Q_PHX_DX_DM</code></a></td>
+<td>[문진1] (본인) 당뇨병 진단여부</td>
+<td>[Questionnaire 1] (the person) Diabetes whether diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_dx_dld/"><code>Q_PHX_DX_DLD</code></a></td>
+<td>[문진1] (본인) 이상지질혈증 진단여부</td>
+<td>[Questionnaire 1] (the person) Dyslipidemia whether diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_dx_ptb/"><code>Q_PHX_DX_PTB</code></a></td>
+<td>[문진1] (본인) 폐결핵 진단여부</td>
+<td>[Questionnaire 1] (the person) Pulmonary tuberculosis whether diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_dx_etc/"><code>Q_PHX_DX_ETC</code></a></td>
+<td>[문진1] (본인) 기타(암포함) 진단여부</td>
+<td>Questionnaire 1: Own history: other, including cancer, diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_tx_stk/"><code>Q_PHX_TX_STK</code></a></td>
+<td>[문진1] (본인) 뇌졸중(중풍) 약물치료여부</td>
+<td>Questionnaire 1: own history of stroke, treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_tx_htdz/"><code>Q_PHX_TX_HTDZ</code></a></td>
+<td>[문진1] (본인) 심장병(심근경색/협심증) 약물치료여부</td>
+<td>Questionnaire 1: own history of heart disease (myocardial infarction or angina), treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_tx_htn/"><code>Q_PHX_TX_HTN</code></a></td>
+<td>[문진1] (본인) 고혈압 약물치료여부</td>
+<td>Questionnaire 1: own history of hypertension, treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_tx_dm/"><code>Q_PHX_TX_DM</code></a></td>
+<td>[문진1] (본인) 당뇨병 약물치료여부</td>
+<td>Questionnaire 1: own history of diabetes, treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_tx_dld/"><code>Q_PHX_TX_DLD</code></a></td>
+<td>[문진1] (본인) 이상지질혈증 약물치료여부</td>
+<td>Questionnaire 1: own history of dyslipidemia, treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_tx_ptb/"><code>Q_PHX_TX_PTB</code></a></td>
+<td>[문진1] (본인) 폐결핵 약물치료여부</td>
+<td>Questionnaire 1: own history of pulmonary tuberculosis, treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_phx_tx_etc/"><code>Q_PHX_TX_ETC</code></a></td>
+<td>[문진1] (본인) 기타(암포함) 약물치료여부</td>
+<td>Questionnaire 1: own history of another condition, including cancer, treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_fhx_stk/"><code>Q_FHX_STK</code></a></td>
+<td>[문진2] (가족력)뇌졸중유무</td>
+<td>[Questionnaire 2] (family history)Strokepresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_fhx_htdz/"><code>Q_FHX_HTDZ</code></a></td>
+<td>[문진2] (가족력)심장병유무</td>
+<td>[Questionnaire 2] (family history)Heart diseasepresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_fhx_htn/"><code>Q_FHX_HTN</code></a></td>
+<td>[문진2] (가족력)고혈압유무</td>
+<td>[Questionnaire 2] (family history)Hypertensionpresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_fhx_dm/"><code>Q_FHX_DM</code></a></td>
+<td>[문진2] (가족력)당뇨병유무</td>
+<td>[Questionnaire 2] (family history)Diabetespresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_fhx_etc/"><code>Q_FHX_ETC</code></a></td>
+<td>[문진2] (가족력) 기타(암포함) 진단여부</td>
+<td>[Questionnaire 2] (family history) other, including cancer whether diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_hbv_ag/"><code>Q_HBV_AG</code></a></td>
+<td>[문진3] (본인) B형간염 항원보유자</td>
+<td>Questionnaire 3: Own hepatitis B surface-antigen carriage</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_smk_yn/"><code>Q_SMK_YN</code></a></td>
+<td>[문진4-1] 지금까지 평생 총 5갑(100개비) 이상의 담배를 피운 적이 있습니까?</td>
+<td>Questionnaire 4-1: Have you smoked 5 packs (100 cigarettes) or more in your lifetime?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_smk_pre_drt/"><code>Q_SMK_PRE_DRT</code></a></td>
+<td>[문진4-2] (과거)금연전 흡연기간</td>
+<td>Questionnaire 4-2: Years smoked before quitting</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_smk_pre_amt/"><code>Q_SMK_PRE_AMT</code></a></td>
+<td>[문진4-2] (과거)금연전 하루흡연량</td>
+<td>Questionnaire 4-2: Cigarettes per day before quitting</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_smk_now_drt/"><code>Q_SMK_NOW_DRT</code></a></td>
+<td>[문진4-3] (현재)흡연기간</td>
+<td>Questionnaire 4-3: Years smoked, current</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_smk_now_amt_v09n/"><code>Q_SMK_NOW_AMT_V09N</code></a></td>
+<td>[문진4-3] (현재)하루흡연량</td>
+<td>Questionnaire 4-3: Cigarettes per day, current</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_drk_frq_v09n/"><code>Q_DRK_FRQ_V09N</code></a></td>
+<td>[문진5-1] 주간음주일수</td>
+<td>Questionnaire 5-1: Drinking days per week</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_drk_amt_v09n/"><code>Q_DRK_AMT_V09N</code></a></td>
+<td>[문진5-2] 1회 음주량</td>
+<td>Questionnaire 5-2: Amount per drinking occasion</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_pa_vd/"><code>Q_PA_VD</code></a></td>
+<td>[문진6-1] 1주_20분이상 격렬한 운동</td>
+<td>Questionnaire 6-1: Days per week of vigorous exercise for 20 minutes or more</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_pa_md/"><code>Q_PA_MD</code></a></td>
+<td>[문진6-2] 1주_30분이상 중간정도 운동</td>
+<td>Questionnaire 6-2: Days per week of moderate exercise for 30 minutes or more</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_0917/q_pa_walk/"><code>Q_PA_WALK</code></a></td>
+<td>[문진6-3] 1주_총30분이상 걷기 운동</td>
+<td>Questionnaire 6-3: Days per week of walking totaling 30 minutes or more</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checkup-questionnaire-20182023">Checkup questionnaire, 2018–2023<a class="headerlink" href="#checkup-questionnaire-20182023" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_일반건강검진_문진_1823. File <code>CS_GC_G1Q_1823</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_g1q_1823/exmd_bz_yyyy/"><code>EXMD_BZ_YYYY</code></a></td>
+<td>검진사업연도</td>
+<td>Screening year</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_dx_stk/"><code>Q_PHX_DX_STK</code></a></td>
+<td>[문진1] (본인) 뇌졸중(중풍) 진단여부</td>
+<td>Questionnaire 1: own history of stroke, diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_dx_htdz/"><code>Q_PHX_DX_HTDZ</code></a></td>
+<td>[문진1] (본인) 심장병(심근경색/협심증) 진단여부</td>
+<td>Questionnaire 1: own history of heart disease (myocardial infarction or angina), diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_dx_htn/"><code>Q_PHX_DX_HTN</code></a></td>
+<td>[문진1] (본인) 고혈압 진단여부</td>
+<td>[Questionnaire 1] (the person) Hypertension whether diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_dx_dm/"><code>Q_PHX_DX_DM</code></a></td>
+<td>[문진1] (본인) 당뇨병 진단여부</td>
+<td>[Questionnaire 1] (the person) Diabetes whether diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_dx_dld/"><code>Q_PHX_DX_DLD</code></a></td>
+<td>[문진1] (본인) 이상지질혈증 진단여부</td>
+<td>[Questionnaire 1] (the person) Dyslipidemia whether diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_dx_ptb/"><code>Q_PHX_DX_PTB</code></a></td>
+<td>[문진1] (본인) 폐결핵 진단여부</td>
+<td>[Questionnaire 1] (the person) Pulmonary tuberculosis whether diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_dx_etc/"><code>Q_PHX_DX_ETC</code></a></td>
+<td>[문진1] (본인) 기타(암포함) 진단여부</td>
+<td>Questionnaire 1: Own history: other, including cancer, diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_tx_stk/"><code>Q_PHX_TX_STK</code></a></td>
+<td>[문진1] (본인) 뇌졸중(중풍) 약물치료여부</td>
+<td>Questionnaire 1: own history of stroke, treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_tx_htdz/"><code>Q_PHX_TX_HTDZ</code></a></td>
+<td>[문진1] (본인) 심장병(심근경색/협심증) 약물치료여부</td>
+<td>Questionnaire 1: own history of heart disease (myocardial infarction or angina), treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_tx_htn/"><code>Q_PHX_TX_HTN</code></a></td>
+<td>[문진1] (본인) 고혈압 약물치료여부</td>
+<td>Questionnaire 1: own history of hypertension, treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_tx_dm/"><code>Q_PHX_TX_DM</code></a></td>
+<td>[문진1] (본인) 당뇨병 약물치료여부</td>
+<td>Questionnaire 1: own history of diabetes, treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_tx_dld/"><code>Q_PHX_TX_DLD</code></a></td>
+<td>[문진1] (본인) 이상지질혈증 약물치료여부</td>
+<td>Questionnaire 1: own history of dyslipidemia, treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_tx_ptb/"><code>Q_PHX_TX_PTB</code></a></td>
+<td>[문진1] (본인) 폐결핵 약물치료여부</td>
+<td>Questionnaire 1: own history of pulmonary tuberculosis, treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_phx_tx_etc/"><code>Q_PHX_TX_ETC</code></a></td>
+<td>[문진1] (본인) 기타(암포함) 약물치료여부</td>
+<td>Questionnaire 1: own history of another condition, including cancer, treated with medication</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_fhx_stk/"><code>Q_FHX_STK</code></a></td>
+<td>[문진2] (가족력)뇌졸중유무</td>
+<td>[Questionnaire 2] (family history)Strokepresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_fhx_htdz/"><code>Q_FHX_HTDZ</code></a></td>
+<td>[문진2] (가족력)심장병유무</td>
+<td>[Questionnaire 2] (family history)Heart diseasepresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_fhx_htn/"><code>Q_FHX_HTN</code></a></td>
+<td>[문진2] (가족력)고혈압유무</td>
+<td>[Questionnaire 2] (family history)Hypertensionpresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_fhx_dm/"><code>Q_FHX_DM</code></a></td>
+<td>[문진2] (가족력)당뇨병유무</td>
+<td>[Questionnaire 2] (family history)Diabetespresence</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_fhx_etc/"><code>Q_FHX_ETC</code></a></td>
+<td>[문진2] (가족력) 기타(암포함) 진단여부</td>
+<td>[Questionnaire 2] (family history) other, including cancer whether diagnosed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_hbv_ag/"><code>Q_HBV_AG</code></a></td>
+<td>[문진3] (본인) B형간염 항원보유자</td>
+<td>Questionnaire 3: Own hepatitis B surface-antigen carriage</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_smk_yn/"><code>Q_SMK_YN</code></a></td>
+<td>[문진4] 지금까지 평생 총 5갑(100개비) 이상의 담배를 피운 적이 있습니까?</td>
+<td>Questionnaire 4: Have you smoked 5 packs (100 cigarettes) or more in your lifetime?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_smk_pre_drt/"><code>Q_SMK_PRE_DRT</code></a></td>
+<td>[문진4-1] (과거)금연전 흡연기간</td>
+<td>Questionnaire 4-1: Years smoked before quitting</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_smk_pre_amt/"><code>Q_SMK_PRE_AMT</code></a></td>
+<td>[문진4-1] (과거)금연전 하루흡연량</td>
+<td>Questionnaire 4-1: Cigarettes per day before quitting</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_smk_now_drt/"><code>Q_SMK_NOW_DRT</code></a></td>
+<td>[문진4-2] (현재)흡연기간</td>
+<td>Questionnaire 4-2: Years smoked, current</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_smk_now_amt_v09n/"><code>Q_SMK_NOW_AMT_V09N</code></a></td>
+<td>[문진4-2] (현재)하루흡연량</td>
+<td>Questionnaire 4-2: Cigarettes per day, current</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_smk_now_yn/"><code>Q_SMK_NOW_YN</code></a></td>
+<td>[문진4-1] 현재 일반담배(궐련)을 피우십니까?</td>
+<td>Questionnaire 4-1: Do you currently smoke manufactured cigarettes?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_smk_drt/"><code>Q_SMK_DRT</code></a></td>
+<td>[문진4-1] 현재/과거 일반담배(궐련)을 피우십니까?-흡연기간 총_년</td>
+<td>Questionnaire 4-1: Total years smoked, manufactured cigarettes</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_smk_amt/"><code>Q_SMK_AMT</code></a></td>
+<td>[문진4-1-2] 현재/과거 일반담배(궐련)을 피우십니까?-개비</td>
+<td>Questionnaire 4-1-2: Cigarettes per day, current or former manufactured cigarettes</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_smk_stp_drt/"><code>Q_SMK_STP_DRT</code></a></td>
+<td>[문진4-1-3] 과거 일반담배(궐련)을 피우십니까?-끊은지 _년</td>
+<td>Questionnaire 4-1-3: Years since quitting manufactured cigarettes</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_elec_smk_yn/"><code>Q_ELEC_SMK_YN</code></a></td>
+<td>[문진5] 전자담배를 사용한 경험이 있습니까?</td>
+<td>Questionnaire 5: Have you ever used an e-cigarette?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_elec_smk_amt/"><code>Q_ELEC_SMK_AMT</code></a></td>
+<td>[문진5-1] 최근 한 달 동안 전자담배를 사용한 경험이 있습니까?</td>
+<td>Questionnaire 5-1: Have you used an e-cigarette in the past month?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_hnbt_yn/"><code>Q_HNBT_YN</code></a></td>
+<td>[문진5] 지금까지 궐련형 전자담배 (가열담배, 예)아이코스, 글로, 릴 등)을 피운적 있습니까?</td>
+<td>Questionnaire 5: Have you ever used a heated tobacco product, such as IQOS, glo, or lil?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_hnbt_now_yn/"><code>Q_HNBT_NOW_YN</code></a></td>
+<td>[문진5-1] 현재 궐련형 전자담배(가열담배) 피우십니까?</td>
+<td>Questionnaire 5-1: Do you currently use a heated tobacco product?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_hnbt_drt/"><code>Q_HNBT_DRT</code></a></td>
+<td>[문진5-1-1] 현재/과거 궐련형 전자담배(가열담배) 피우십니까?-년</td>
+<td>Questionnaire 5-1-1: Years using a heated tobacco product</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_hnbt_amt/"><code>Q_HNBT_AMT</code></a></td>
+<td>[문진5-1-2] 현재/과거 궐련형 전자담배(가열담배) 피우십니까?-개비</td>
+<td>Questionnaire 5-1-2: Sticks per day, heated tobacco product</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_hnbt_stp_drt/"><code>Q_HNBT_STP_DRT</code></a></td>
+<td>[문진5-1-3] 과거 궐련형 전자담배(가열담배) 피우십니까?-끊은지 _년</td>
+<td>Questionnaire 5-1-3: Years since quitting a heated tobacco product</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_e_ciga_yn/"><code>Q_E_CIGA_YN</code></a></td>
+<td>[문진6] 전자담배를 사용한 경험이 있습니까?</td>
+<td>Questionnaire 6: Have you ever used an e-cigarette?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_e_ciga_amt/"><code>Q_E_CIGA_AMT</code></a></td>
+<td>[문진6-1] 최근 한 달 동안 전자담배를 사용한 경험이 있습니까?</td>
+<td>Questionnaire 6-1: Have you used an e-cigarette in the past month?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_per/"><code>Q_DRK_PER</code></a></td>
+<td>[문진7] 지난 1년간 술을 마시는 횟수는 어느 정도입니까?</td>
+<td>Questionnaire 7: Over the past year, how often did you drink?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_frq/"><code>Q_DRK_FRQ</code></a></td>
+<td>[문진7-1] 일주일에, 한 달에, 1년에 _번</td>
+<td>Questionnaire 7-1: Times per week, per month, or per year</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_soju_shot/"><code>Q_DRK_SOJU_SHOT</code></a></td>
+<td>[문진7-1-1] 술을 마시는 날은 보통 어느 정도 마십니까?-소주 _잔</td>
+<td>Questionnaire 7-1-1: On a drinking day, how much do you usually drink? soju, glasses</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_soju_btl/"><code>Q_DRK_SOJU_BTL</code></a></td>
+<td>[문진7-1-2] 술을 마시는 날은 보통 어느 정도 마십니까?-소주 _병</td>
+<td>Questionnaire 7-1-2: On a drinking day, how much do you usually drink? soju, bottles</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_soju_can/"><code>Q_DRK_SOJU_CAN</code></a></td>
+<td>[문진7-1-3] 술을 마시는 날은 보통 어느 정도 마십니까?-소주 _캔</td>
+<td>Questionnaire 7-1-3: On a drinking day, how much do you usually drink? soju, cans</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_soju_cc/"><code>Q_DRK_SOJU_CC</code></a></td>
+<td>[문진7-1-4] 술을 마시는 날은 보통 어느 정도 마십니까?-소주 _cc</td>
+<td>Questionnaire 7-1-4: On a drinking day, how much do you usually drink? soju, cc</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_beer_shot/"><code>Q_DRK_BEER_SHOT</code></a></td>
+<td>[문진7-1-5] 술을 마시는 날은 보통 어느 정도 마십니까?-맥주 _잔</td>
+<td>Questionnaire 7-1-5: On a drinking day, how much do you usually drink? beer, glasses</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_beer_btl/"><code>Q_DRK_BEER_BTL</code></a></td>
+<td>[문진7-1-6] 술을 마시는 날은 보통 어느 정도 마십니까?-맥주 _병</td>
+<td>Questionnaire 7-1-6: On a drinking day, how much do you usually drink? beer, bottles</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_beer_can/"><code>Q_DRK_BEER_CAN</code></a></td>
+<td>[문진7-1-7] 술을 마시는 날은 보통 어느 정도 마십니까?-맥주 _캔</td>
+<td>Questionnaire 7-1-7: On a drinking day, how much do you usually drink? beer, cans</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_beer_cc/"><code>Q_DRK_BEER_CC</code></a></td>
+<td>[문진7-1-8] 술을 마시는 날은 보통 어느 정도 마십니까?-맥주 _cc</td>
+<td>Questionnaire 7-1-8: On a drinking day, how much do you usually drink? beer, cc</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_lqr_shot/"><code>Q_DRK_LQR_SHOT</code></a></td>
+<td>[문진7-1-9] 술을 마시는 날은 보통 어느 정도 마십니까?-양주 _잔</td>
+<td>Questionnaire 7-1-9: On a drinking day, how much do you usually drink? spirits, glasses</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_lqr_btl/"><code>Q_DRK_LQR_BTL</code></a></td>
+<td>[문진7-1-10] 술을 마시는 날은 보통 어느 정도 마십니까?-양주 _병</td>
+<td>Questionnaire 7-1-10: On a drinking day, how much do you usually drink? spirits, bottles</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_lqr_can/"><code>Q_DRK_LQR_CAN</code></a></td>
+<td>[문진7-1-11] 술을 마시는 날은 보통 어느 정도 마십니까?-양주 _캔</td>
+<td>Questionnaire 7-1-11: On a drinking day, how much do you usually drink? spirits, cans</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_lqr_cc/"><code>Q_DRK_LQR_CC</code></a></td>
+<td>[문진7-1-12] 술을 마시는 날은 보통 어느 정도 마십니까?-양주 _cc</td>
+<td>Questionnaire 7-1-12: On a drinking day, how much do you usually drink? spirits, cc</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_klqr_shot/"><code>Q_DRK_KLQR_SHOT</code></a></td>
+<td>[문진7-1-13] 술을 마시는 날은 보통 어느 정도 마십니까?-막걸리 _잔</td>
+<td>Questionnaire 7-1-13: On a drinking day, how much do you usually drink? makgeolli, glasses</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_klqr_btl/"><code>Q_DRK_KLQR_BTL</code></a></td>
+<td>[문진7-1-14] 술을 마시는 날은 보통 어느 정도 마십니까?-막걸리 _병</td>
+<td>Questionnaire 7-1-14: On a drinking day, how much do you usually drink? makgeolli, bottles</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_klqr_can/"><code>Q_DRK_KLQR_CAN</code></a></td>
+<td>[문진7-1-15] 술을 마시는 날은 보통 어느 정도 마십니까?-막걸리 _캔</td>
+<td>Questionnaire 7-1-15: On a drinking day, how much do you usually drink? makgeolli, cans</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_klqr_cc/"><code>Q_DRK_KLQR_CC</code></a></td>
+<td>[문진7-1-16] 술을 마시는 날은 보통 어느 정도 마십니까?-막걸리 _cc</td>
+<td>Questionnaire 7-1-16: On a drinking day, how much do you usually drink? makgeolli, cc</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_wine_shot/"><code>Q_DRK_WINE_SHOT</code></a></td>
+<td>[문진7-1-18] 술을 마시는 날은 보통 어느 정도 마십니까?-와인 _잔</td>
+<td>Questionnaire 7-1-18: On a drinking day, how much do you usually drink? wine, glasses</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_wine_btl/"><code>Q_DRK_WINE_BTL</code></a></td>
+<td>[문진7-1-19] 술을 마시는 날은 보통 어느 정도 마십니까?-와인 _병</td>
+<td>Questionnaire 7-1-19: On a drinking day, how much do you usually drink? wine, bottles</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_wine_can/"><code>Q_DRK_WINE_CAN</code></a></td>
+<td>[문진7-1-20] 술을 마시는 날은 보통 어느 정도 마십니까?-와인 _캔</td>
+<td>Questionnaire 7-1-20: On a drinking day, how much do you usually drink? wine, cans</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_wine_cc/"><code>Q_DRK_WINE_CC</code></a></td>
+<td>[문진7-1-21] 술을 마시는 날은 보통 어느 정도 마십니까?-와인 _cc</td>
+<td>Questionnaire 7-1-21: On a drinking day, how much do you usually drink? wine, cc</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_soju_shot/"><code>Q_DRK_MAX_SOJU_SHOT</code></a></td>
+<td>[문진7-2-1] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-소주 _잔</td>
+<td>Questionnaire 7-2-1: On the day you drank the most, how much was that? soju, glasses</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_soju_btl/"><code>Q_DRK_MAX_SOJU_BTL</code></a></td>
+<td>[문진7-2-2] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-소주 _병</td>
+<td>Questionnaire 7-2-2: On the day you drank the most, how much was that? soju, bottles</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_soju_can/"><code>Q_DRK_MAX_SOJU_CAN</code></a></td>
+<td>[문진7-2-3] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-소주 _캔</td>
+<td>Questionnaire 7-2-3: On the day you drank the most, how much was that? soju, cans</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_soju_cc/"><code>Q_DRK_MAX_SOJU_CC</code></a></td>
+<td>[문진7-2-4] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-소주 _cc</td>
+<td>Questionnaire 7-2-4: On the day you drank the most, how much was that? soju, cc</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_beer_shot/"><code>Q_DRK_MAX_BEER_SHOT</code></a></td>
+<td>[문진7-2-5] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-맥주 _잔</td>
+<td>Questionnaire 7-2-5: On the day you drank the most, how much was that? beer, glasses</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_beer_btl/"><code>Q_DRK_MAX_BEER_BTL</code></a></td>
+<td>[문진7-2-6] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-맥주 _병</td>
+<td>Questionnaire 7-2-6: On the day you drank the most, how much was that? beer, bottles</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_beer_can/"><code>Q_DRK_MAX_BEER_CAN</code></a></td>
+<td>[문진7-2-7] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-맥주 _캔</td>
+<td>Questionnaire 7-2-7: On the day you drank the most, how much was that? beer, cans</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_beer_cc/"><code>Q_DRK_MAX_BEER_CC</code></a></td>
+<td>[문진7-2-8] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-맥주 _cc</td>
+<td>Questionnaire 7-2-8: On the day you drank the most, how much was that? beer, cc</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_lqr_shot/"><code>Q_DRK_MAX_LQR_SHOT</code></a></td>
+<td>[문진7-2-9] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-양주 _잔</td>
+<td>Questionnaire 7-2-9: On the day you drank the most, how much was that? spirits, glasses</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_lqr_btl/"><code>Q_DRK_MAX_LQR_BTL</code></a></td>
+<td>[문진7-2-10] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-양주 _병</td>
+<td>Questionnaire 7-2-10: On the day you drank the most, how much was that? spirits, bottles</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_lqr_can/"><code>Q_DRK_MAX_LQR_CAN</code></a></td>
+<td>[문진7-2-11] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-양주 _캔</td>
+<td>Questionnaire 7-2-11: On the day you drank the most, how much was that? spirits, cans</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_lqr_cc/"><code>Q_DRK_MAX_LQR_CC</code></a></td>
+<td>[문진7-2-12] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-양주 _cc</td>
+<td>Questionnaire 7-2-12: On the day you drank the most, how much was that? spirits, cc</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_klqr_shot/"><code>Q_DRK_MAX_KLQR_SHOT</code></a></td>
+<td>[문진7-2-13] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-막걸리 _잔</td>
+<td>Questionnaire 7-2-13: On the day you drank the most, how much was that? makgeolli, glasses</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_klqr_btl/"><code>Q_DRK_MAX_KLQR_BTL</code></a></td>
+<td>[문진7-2-14] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-막걸리 _병</td>
+<td>Questionnaire 7-2-14: On the day you drank the most, how much was that? makgeolli, bottles</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_klqr_can/"><code>Q_DRK_MAX_KLQR_CAN</code></a></td>
+<td>[문진7-2-15] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-막걸리 _캔</td>
+<td>Questionnaire 7-2-15: On the day you drank the most, how much was that? makgeolli, cans</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_klqr_cc/"><code>Q_DRK_MAX_KLQR_CC</code></a></td>
+<td>[문진7-2-16] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-막걸리 _cc</td>
+<td>Questionnaire 7-2-16: On the day you drank the most, how much was that? makgeolli, cc</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_wine_shot/"><code>Q_DRK_MAX_WINE_SHOT</code></a></td>
+<td>[문진7-2-18] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-와인 _잔</td>
+<td>Questionnaire 7-2-18: On the day you drank the most, how much was that? wine, glasses</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_wine_btl/"><code>Q_DRK_MAX_WINE_BTL</code></a></td>
+<td>[문진7-2-19] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-와인 _병</td>
+<td>Questionnaire 7-2-19: On the day you drank the most, how much was that? wine, bottles</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_wine_can/"><code>Q_DRK_MAX_WINE_CAN</code></a></td>
+<td>[문진7-2-20] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-와인 _캔</td>
+<td>Questionnaire 7-2-20: On the day you drank the most, how much was that? wine, cans</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_drk_max_wine_cc/"><code>Q_DRK_MAX_WINE_CC</code></a></td>
+<td>[문진7-2-21] 하루 동안 가장 많이 마셨던 음주량은 어느 정도입니까?-와인 _cc</td>
+<td>Questionnaire 7-2-21: On the day you drank the most, how much was that? wine, cc</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_pa_vd_frq/"><code>Q_PA_VD_FRQ</code></a></td>
+<td>[문진8-1] 평소 1주일간 숨이 많이 차게 만드는 고강도 신체활동을 며칠 하십니까?-주당 _일</td>
+<td>Questionnaire 8-1: In a usual week, on how many days do you do vigorous activity that makes you very short of breath? Days per week</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_pa_vd_hrs/"><code>Q_PA_VD_HRS</code></a></td>
+<td>[문진8-2-1] 평소 하루에 숨이 많이 차게 만드는 고강도 신체활동을 몇 시간 하십니까?-하루에 _시간</td>
+<td>Questionnaire 8-2-1: On a usual day, how many hours of vigorous activity that makes you very short of breath? Hours</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_pa_vd_mins/"><code>Q_PA_VD_MINS</code></a></td>
+<td>[문진8-2-2] 평소 하루에 숨이 많이 차게 만드는 고강도 신체활동을 몇 시간 하십니까?-하루에 _분</td>
+<td>Questionnaire 8-2-2: On a usual day, how many hours of vigorous activity that makes you very short of breath? Minutes</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_pa_md_frq/"><code>Q_PA_MD_FRQ</code></a></td>
+<td>[문진9-1] 평소 1주일간, 숨이 약간 차게 만드는 중강도 신체활동을 며칠 하십니까?-주당 _일</td>
+<td>Questionnaire 9-1: In a usual week, on how many days do you do moderate activity that makes you slightly short of breath? Days per week</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_pa_md_hrs/"><code>Q_PA_MD_HRS</code></a></td>
+<td>[문진9-2-1] 평소 하루에 숨이 약간 차게 만드는 중강도 신체활동을 몇시간 하십니까?-하루에 _시간</td>
+<td>Questionnaire 9-2-1: On a usual day, how long is the moderate activity that makes you slightly short of breath? Hours</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_pa_md_mins/"><code>Q_PA_MD_MINS</code></a></td>
+<td>[문진9-2-2] 평소 하루에 숨이 약간 차게 만드는 중강도 신체활동을 몇 시간 하십니까?-하루에 _분</td>
+<td>Questionnaire 9-2-2: On a usual day, how long is the moderate activity that makes you slightly short of breath? Minutes</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1q_1823/q_pa_musl_frq/"><code>Q_PA_MUSL_FRQ</code></a></td>
+<td>[문진10] 최근 1주일 동안 팔굽혀펴기, 윗몸일으키기, 아령, 역기, 철봉 등 근력 운동을 한 날은 며칠입니까?-주당 _일</td>
+<td>Questionnaire 10: In the past week, on how many days did you do strength exercise such as push-ups, sit-ups, dumbbells, weights, or a pull-up bar? Days per week</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checkup-results">Checkup results<a class="headerlink" href="#checkup-results" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_일반건강검진_결과및판정. File <code>CS_GC_G1E</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_g1e/exmd_bz_yyyy/"><code>EXMD_BZ_YYYY</code></a></td>
+<td>검진사업연도</td>
+<td>Screening year</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_hght/"><code>G1E_HGHT</code></a></td>
+<td>신장</td>
+<td>Height</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_wght/"><code>G1E_WGHT</code></a></td>
+<td>체중</td>
+<td>Weight</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_wstc/"><code>G1E_WSTC</code></a></td>
+<td>허리둘레</td>
+<td>Waist circumference</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_bmi/"><code>G1E_BMI</code></a></td>
+<td>체질량지수</td>
+<td>Body mass index</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_bp_sys/"><code>G1E_BP_SYS</code></a></td>
+<td>수축기혈압</td>
+<td>Systolic blood pressure</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_bp_dia/"><code>G1E_BP_DIA</code></a></td>
+<td>이완기혈압</td>
+<td>Diastolic blood pressure</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_urn_glu/"><code>G1E_URN_GLU</code></a></td>
+<td>요당</td>
+<td>Urine glucose</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_urn_prot/"><code>G1E_URN_PROT</code></a></td>
+<td>요단백</td>
+<td>Urine protein</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_urn_occ_bld/"><code>G1E_URN_OCC_BLD</code></a></td>
+<td>요잠혈</td>
+<td>Urine occult blood</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_hgb/"><code>G1E_HGB</code></a></td>
+<td>혈색소</td>
+<td>Hemoglobin</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_fbs/"><code>G1E_FBS</code></a></td>
+<td>공복혈당</td>
+<td>Fasting glucose</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_tot_chol/"><code>G1E_TOT_CHOL</code></a></td>
+<td>총콜레스테롤</td>
+<td>Total cholesterol</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_hdl/"><code>G1E_HDL</code></a></td>
+<td>HDL콜레스테롤</td>
+<td>HDL cholesterol</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_tg/"><code>G1E_TG</code></a></td>
+<td>트리글리세라이드</td>
+<td>Triglyceride</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_ldl/"><code>G1E_LDL</code></a></td>
+<td>LDL콜레스테롤</td>
+<td>LDL cholesterol</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_crtn/"><code>G1E_CRTN</code></a></td>
+<td>혈청크레아티닌</td>
+<td>Serum creatinine</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_gfr/"><code>G1E_GFR</code></a></td>
+<td>신사구체여과율(GFR)</td>
+<td>Glomerular filtration rate (GFR)</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_sgot/"><code>G1E_SGOT</code></a></td>
+<td>(혈청지오티)AST</td>
+<td>AST (SGOT)</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_sgpt/"><code>G1E_SGPT</code></a></td>
+<td>(혈청지피티)ALT</td>
+<td>ALT (SGPT)</td>
+</tr>
+<tr>
+<td><a href="cs_gc_g1e/g1e_ggt/"><code>G1E_GGT</code></a></td>
+<td>감마지티피</td>
+<td>Gamma-glutamyl transferase</td>
+</tr>
+</tbody>
+</table>
+<h2 id="stomach-screening-questionnaire-20072008">Stomach screening questionnaire, 2007–2008<a class="headerlink" href="#stomach-screening-questionnaire-20072008" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_암문진_위암_0708. File <code>CS_GC_CST_CQ_RST_0708</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/exmd_bz_yyyy/"><code>EXMD_BZ_YYYY</code></a></td>
+<td>검진사업연도</td>
+<td>Screening year</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_sx_yn/"><code>QC_SX_YN</code></a></td>
+<td>[문진1] 현재 신체 어느 부위에든 불편한 증상이 있습니까?</td>
+<td>Questionnaire 1: Do you have an uncomfortable symptom anywhere in your body?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_cst_yn/"><code>QC_PFHX_CST_YN</code></a></td>
+<td>[문진3] 위암 유무</td>
+<td>Questionnaire 3: Stomach cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_cst_i/"><code>QC_PFHX_CST_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_cst_prt/"><code>QC_PFHX_CST_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_cst_brt/"><code>QC_PFHX_CST_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_cst_sst/"><code>QC_PFHX_CST_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_cbr_yn/"><code>QC_PFHX_CBR_YN</code></a></td>
+<td>[문진3] 유방암 유무</td>
+<td>Questionnaire 3: Breast cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_cbr_i/"><code>QC_PFHX_CBR_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_cbr_prt/"><code>QC_PFHX_CBR_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_cbr_brt/"><code>QC_PFHX_CBR_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_cbr_sst/"><code>QC_PFHX_CBR_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_ccr_yn/"><code>QC_PFHX_CCR_YN</code></a></td>
+<td>[문진3] 대장암 유무</td>
+<td>Questionnaire 3: Colorectal cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_ccr_i/"><code>QC_PFHX_CCR_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_ccr_prt/"><code>QC_PFHX_CCR_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_ccr_brt/"><code>QC_PFHX_CCR_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_ccr_sst/"><code>QC_PFHX_CCR_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_clv_yn/"><code>QC_PFHX_CLV_YN</code></a></td>
+<td>[문진3] 간암 유무</td>
+<td>Questionnaire 3: Liver cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_clv_i/"><code>QC_PFHX_CLV_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_clv_prt/"><code>QC_PFHX_CLV_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_clv_brt/"><code>QC_PFHX_CLV_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_clv_sst/"><code>QC_PFHX_CLV_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_ccx_yn/"><code>QC_PFHX_CCX_YN</code></a></td>
+<td>[문진3] 자궁경부암 유무</td>
+<td>Questionnaire 3: Cervical cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_ccx_i/"><code>QC_PFHX_CCX_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_ccx_prt/"><code>QC_PFHX_CCX_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_ccx_brt/"><code>QC_PFHX_CCX_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_ccx_sst/"><code>QC_PFHX_CCX_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_etc_yn/"><code>QC_PFHX_ETC_YN</code></a></td>
+<td>[문진3] 기타 유무</td>
+<td>Questionnaire 3: Other</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_etc_i/"><code>QC_PFHX_ETC_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_etc_prt/"><code>QC_PFHX_ETC_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_etc_brt/"><code>QC_PFHX_ETC_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pfhx_etc_sst/"><code>QC_PFHX_ETC_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_phx_ibs_yn/"><code>QC_PHX_IBS_YN</code></a></td>
+<td>[문진4] 만성 염증성 대장질환(크론병, 궤양성 대장염 등)을 앓고 계시거나 과거에 앓으신 적이 있습니까? 병원에서 진단 받으신 경우만 해당됩니다.</td>
+<td>Questionnaire 4: Do you have, or have you had, chronic inflammatory bowel disease such as Crohn's disease or ulcerative colitis? Only a diagnosis made in a hospital counts.</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_phx_cpo_yn/"><code>QC_PHX_CPO_YN</code></a></td>
+<td>[문진5] 선종성 대장용종(폴립)이나 가족성 대장용종증을 앓고 계시거나 과거에 앓으신 적이 있습니까?</td>
+<td>Questionnaire 5: Do you have, or have you had, an adenomatous colorectal polyp or familial adenomatous polyposis?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_phx_hbvc_yn/"><code>QC_PHX_HBVC_YN</code></a></td>
+<td>[문진6] 간 질환이 있으십니까?-B형간염바이러스보유자</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_phx_hcvc_yn/"><code>QC_PHX_HCVC_YN</code></a></td>
+<td>[문진6] 간 질환이 있으십니까?-C형간염바이러스보유자</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_phx_chb_yn/"><code>QC_PHX_CHB_YN</code></a></td>
+<td>[문진6] 간 질환이 있으십니까?-만성B형간염</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_phx_chc_yn/"><code>QC_PHX_CHC_YN</code></a></td>
+<td>[문진6] 간 질환이 있으십니까?-만성C형간염</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_phx_lc_yn/"><code>QC_PHX_LC_YN</code></a></td>
+<td>[문진6] 간 질환이 있으십니까?-간경화/간경변</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_ntr_vgt_amt/"><code>QC_NTR_VGT_AMT</code></a></td>
+<td>[문진7] 김치를 제외하고 하루에 몇 가지 채소 (익힌 것과 날것)를 드십니까?</td>
+<td>Questionnaire 7: Apart from kimchi, how many kinds of vegetables, cooked or raw, do you eat in a day?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_ntr_frt_amt/"><code>QC_NTR_FRT_AMT</code></a></td>
+<td>[문진8] 일주일에 과일을 몇 번 드십니까?</td>
+<td>Questionnaire 8: How many times a week do you eat fruit?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_ntr_rm_amt/"><code>QC_NTR_RM_AMT</code></a></td>
+<td>[문진9] 일주일에 붉은 살코기(소고기, 돼지고기 등)를 몇 번 드십니까?</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_ntr_ls/"><code>QC_NTR_LS</code></a></td>
+<td>[문진10] 외식을 하실 때 음식의 간에 대해 어떻게 느끼십니까?</td>
+<td>Questionnaire 10: When you eat out, how salty does the food taste?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_smk_yn/"><code>QC_SMK_YN</code></a></td>
+<td>[문진11] 귀하는 지금까지 평생 총 20갑(400개피) 이상의 담배를 피운 적이 있습니까?</td>
+<td>Questionnaire 11: Have you smoked 20 packs (400 cigarettes) or more in your lifetime?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_smk_pre_drt/"><code>QC_SMK_PRE_DRT</code></a></td>
+<td>[문진11-1] 담배를 끊은 지 _년 되었음</td>
+<td>Questionnaire 11-1: Years since quitting cigarettes</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_smk_strt_yr/"><code>QC_SMK_STRT_YR</code></a></td>
+<td>[문진12-1] _세부터</td>
+<td>Questionnaire 12-1: From age _</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_smk_drt/"><code>QC_SMK_DRT</code></a></td>
+<td>[문진12-2] 총 _년간</td>
+<td>Questionnaire 12-2: For _ years in total</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_smk_amt/"><code>QC_SMK_AMT</code></a></td>
+<td>[문진12-3] 하루 평균 _개피 피웠음</td>
+<td>Questionnaire 12-3: Cigarettes per day, on average</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_pa_md_frq/"><code>QC_PA_MD_FRQ</code></a></td>
+<td>[문진13] 하루 30분 이상 약간 숨이 찰 정도로 걷거나 운동 하기를 일주일에 몇 일 정도 하십니까?</td>
+<td>Questionnaire 13: On how many days a week do you walk or exercise for at least 30 minutes, enough to be slightly short of breath?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_drk_yn/"><code>QC_DRK_YN</code></a></td>
+<td>[문진14] 현재 귀하의 음주상태는 어떻습니까?</td>
+<td>Questionnaire 14: What is your current drinking status?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_drk_pre_drt/"><code>QC_DRK_PRE_DRT</code></a></td>
+<td>[문진14-1] 음주를 끊은 지 _년 되었음</td>
+<td>Questionnaire 14-1: Years since quitting alcohol</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_drk_frq/"><code>QC_DRK_FRQ</code></a></td>
+<td>[문진15] 음주 횟수는?</td>
+<td>Questionnaire 15: How often do you drink?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_drk_amt/"><code>QC_DRK_AMT</code></a></td>
+<td>[문진15-1] 한번 마실때, 평균 어느 정도 마십니까? (소주 2홉 1병 기준으로)</td>
+<td>Questionnaire 15-1: When you drink, how much do you usually drink? (one 360 ml bottle of soju as the unit)</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_tst_ugi_yn/"><code>QC_TST_UGI_YN</code></a></td>
+<td>[문진16] 암과 관련된 검사경험-위투시촬영(UGI)유무</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_tst_gsc_yn/"><code>QC_TST_GSC_YN</code></a></td>
+<td>[문진16] 암과 관련된 검사경험-위내시경 유무</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_tst_fobt_yn/"><code>QC_TST_FOBT_YN</code></a></td>
+<td>[문진16] 암과 관련된 검사경험-대변잠혈검사유무</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_tst_dcbe_yn/"><code>QC_TST_DCBE_YN</code></a></td>
+<td>[문진16] 암과 관련된 검사경험-대장이중조영검사(대장 x선 촬영)</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_tst_csc_yn/"><code>QC_TST_CSC_YN</code></a></td>
+<td>[문진16] 암과 관련된 검사경험-대장내시경유무</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_tst_lvus_yn/"><code>QC_TST_LVUS_YN</code></a></td>
+<td>[문진16] 암과 관련된 검사경험-간초음파</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_mnc_yn/"><code>QC_MNC_YN</code></a></td>
+<td>[문진17] 월경을 언제 시작하셨습니까?</td>
+<td>Questionnaire 17: When did your periods start?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_mnc_age/"><code>QC_MNC_AGE</code></a></td>
+<td>[문진17-1] 초경 시작 나이</td>
+<td>Questionnaire 17-1: Age at menarche</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_mns_yn/"><code>QC_MNS_YN</code></a></td>
+<td>[문진18] 현재 월경의 상태는 어떠십니까?</td>
+<td>Questionnaire 18: What is your current menstrual status?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_mnp_age/"><code>QC_MNP_AGE</code></a></td>
+<td>[문진18-1] 폐경 나이</td>
+<td>Questionnaire 18-1: age at menopause</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_ert_yn/"><code>QC_ERT_YN</code></a></td>
+<td>[문진19] 폐경 후 증상을 완화하기 위해서 호르몬 제제를 복용하고 계시거나 과거에 복용하신 적이 있습니까?</td>
+<td>Questionnaire 19: Are you taking, or have you taken, hormones for symptoms after menopause?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_opll_yn/"><code>QC_OPLL_YN</code></a></td>
+<td>[문진22] 피임약을 복용하고 계시거나 과거에 복용하신 적이 있습니까?</td>
+<td>Questionnaire 22: Are you taking, or have you taken, oral contraceptives?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_tst_mmg_yn/"><code>QC_TST_MMG_YN</code></a></td>
+<td>[문진23] 암과 관련된 검사경험-유방엑스선검사유무</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0708/qc_tst_ppsm_yn/"><code>QC_TST_PPSM_YN</code></a></td>
+<td>[문진23] 암과 관련된 검사경험-자궁경부세포검사</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="stomach-screening-questionnaire-20092023">Stomach screening questionnaire, 2009–2023<a class="headerlink" href="#stomach-screening-questionnaire-20092023" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_암문진_위암0923. File <code>CS_GC_CST_CQ_RST_0923</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/exmd_bz_yyyy/"><code>EXMD_BZ_YYYY</code></a></td>
+<td>검진사업연도</td>
+<td>Screening year</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_sx_yn/"><code>QC_SX_YN</code></a></td>
+<td>[문진1] 현재 신체 어느 부위에든 불편한 증상이 있습니까?</td>
+<td>Questionnaire 1: Do you have an uncomfortable symptom anywhere in your body?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_wt_lss/"><code>QC_WT_LSS</code></a></td>
+<td>[문진2] 최근 6개월 간 특별한 이유 없이 5kg 이상의 체중감소가 있었습니까?</td>
+<td>Questionnaire 2: In the past 6 months, have you lost 5 kg or more without a particular reason?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_wt_lss_amt/"><code>QC_WT_LSS_AMT</code></a></td>
+<td>[문진2] (체중감소인 경우)감소 체중</td>
+<td>Questionnaire 2: Kilograms lost, if weight was lost</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_cst_yn/"><code>QC_PFHX_CST_YN</code></a></td>
+<td>[문진3] 위암 유무</td>
+<td>Questionnaire 3: Stomach cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_cst_i/"><code>QC_PFHX_CST_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_cst_prt/"><code>QC_PFHX_CST_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_cst_brt/"><code>QC_PFHX_CST_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_cst_sst/"><code>QC_PFHX_CST_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_cst_cdr/"><code>QC_PFHX_CST_CDR</code></a></td>
+<td>[문진3] (자녀) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a child</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_cbr_yn/"><code>QC_PFHX_CBR_YN</code></a></td>
+<td>[문진3] 유방암 유무</td>
+<td>Questionnaire 3: Breast cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_cbr_i/"><code>QC_PFHX_CBR_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_cbr_prt/"><code>QC_PFHX_CBR_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_cbr_brt/"><code>QC_PFHX_CBR_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_cbr_sst/"><code>QC_PFHX_CBR_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_cbr_cdr/"><code>QC_PFHX_CBR_CDR</code></a></td>
+<td>[문진3] (자녀) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a child</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_ccr_yn/"><code>QC_PFHX_CCR_YN</code></a></td>
+<td>[문진3] 대장암 유무</td>
+<td>Questionnaire 3: Colorectal cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_ccr_i/"><code>QC_PFHX_CCR_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_ccr_prt/"><code>QC_PFHX_CCR_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_ccr_brt/"><code>QC_PFHX_CCR_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_ccr_sst/"><code>QC_PFHX_CCR_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_ccr_cdr/"><code>QC_PFHX_CCR_CDR</code></a></td>
+<td>[문진3] (자녀) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a child</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_clv_yn/"><code>QC_PFHX_CLV_YN</code></a></td>
+<td>[문진3] 간암 유무</td>
+<td>Questionnaire 3: Liver cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_clv_i/"><code>QC_PFHX_CLV_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_clv_prt/"><code>QC_PFHX_CLV_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_clv_brt/"><code>QC_PFHX_CLV_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_clv_sst/"><code>QC_PFHX_CLV_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_clv_cdr/"><code>QC_PFHX_CLV_CDR</code></a></td>
+<td>[문진3] (자녀) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a child</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_ccx_yn/"><code>QC_PFHX_CCX_YN</code></a></td>
+<td>[문진3] 자궁경부암 유무</td>
+<td>Questionnaire 3: Cervical cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_ccx_i/"><code>QC_PFHX_CCX_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_ccx_prt/"><code>QC_PFHX_CCX_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_ccx_brt/"><code>QC_PFHX_CCX_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_ccx_sst/"><code>QC_PFHX_CCX_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_ccx_cdr/"><code>QC_PFHX_CCX_CDR</code></a></td>
+<td>[문진3] (자녀) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a child</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_clu_yn/"><code>QC_PFHX_CLU_YN</code></a></td>
+<td>[문진3] 폐암 유무</td>
+<td>Questionnaire 3: Lung cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phfx_clu_i/"><code>QC_PHFX_CLU_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phfx_clu_prt/"><code>QC_PHFX_CLU_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phfx_clu_brt/"><code>QC_PHFX_CLU_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phfx_clu_sst/"><code>QC_PHFX_CLU_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phfx_clu_cdr/"><code>QC_PHFX_CLU_CDR</code></a></td>
+<td>[문진3] (자녀) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a child</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_etc_yn/"><code>QC_PFHX_ETC_YN</code></a></td>
+<td>[문진3] 기타 유무</td>
+<td>Questionnaire 3: Other</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_etc_i/"><code>QC_PFHX_ETC_I</code></a></td>
+<td>[문진3] (본인) 과거병력 유무</td>
+<td>Questionnaire 3: Own past history</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_etc_prt/"><code>QC_PFHX_ETC_PRT</code></a></td>
+<td>[문진3] (부모) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a parent</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_etc_brt/"><code>QC_PFHX_ETC_BRT</code></a></td>
+<td>[문진3] (형제) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a brother</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_etc_sst/"><code>QC_PFHX_ETC_SST</code></a></td>
+<td>[문진3] (자매) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a sister</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_pfhx_etc_cdr/"><code>QC_PFHX_ETC_CDR</code></a></td>
+<td>[문진3] (자녀) 과거병력 유무</td>
+<td>Questionnaire 3: Past history in a child</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_tst_ugi_yn/"><code>QC_TST_UGI_YN</code></a></td>
+<td>[문진4] 암과 관련된 검사경험-위투시촬영(UGI)유무</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_tst_gsc_yn/"><code>QC_TST_GSC_YN</code></a></td>
+<td>[문진4] 암과 관련된 검사경험-위내시경 유무</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_tst_mmg_yn/"><code>QC_TST_MMG_YN</code></a></td>
+<td>[문진4] 암과 관련된 검사경험-유방엑스선검사유무</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_tst_fobt_yn/"><code>QC_TST_FOBT_YN</code></a></td>
+<td>[문진4] 암과 관련된 검사경험-대변잠혈검사유무</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_tst_dcbe_yn/"><code>QC_TST_DCBE_YN</code></a></td>
+<td>[문진4] 암과 관련된 검사경험-대장이중조영검사(대장 x선 촬영)</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_tst_csc_yn/"><code>QC_TST_CSC_YN</code></a></td>
+<td>[문진4] 암과 관련된 검사경험-대장내시경유무</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_tst_ppsm_yn/"><code>QC_TST_PPSM_YN</code></a></td>
+<td>[문진4] 암과 관련된 검사경험-자궁경부세포검사</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_tst_lvus_yn/"><code>QC_TST_LVUS_YN</code></a></td>
+<td>[문진4] 암과 관련된 검사경험-간초음파</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_tst_cct_yn/"><code>QC_TST_CCT_YN</code></a></td>
+<td>[문진4] 암과 관련된 검사경험-흉부CT</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_pu_yn/"><code>QC_PHX_PU_YN</code></a></td>
+<td>[문진5] 현재 또는 과거에 진단받은 위장질환이 있으십니까?-위궤양</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_atgs_yn/"><code>QC_PHX_ATGS_YN</code></a></td>
+<td>[문진5] 현재 또는 과거에 진단받은 위장질환이 있으십니까?-위축성 위염</td>
+<td>Questionnaire 5: Diagnosed now or in the past with disease of the gastrointestinal disease? atrophic gastritis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_inmt_yn/"><code>QC_PHX_INMT_YN</code></a></td>
+<td>[문진5] 현재 또는 과거에 진단받은 위장질환이 있으십니까?-장상피화생</td>
+<td>Questionnaire 5: Diagnosed now or in the past with disease of the gastrointestinal disease? intestinal metaplasia</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_gpo_yn/"><code>QC_PHX_GPO_YN</code></a></td>
+<td>[문진5] 현재 또는 과거에 진단받은 위장질환이 있으십니까?-위용종</td>
+<td>Questionnaire 5: Diagnosed now or in the past with disease of the gastrointestinal disease? gastric polyp</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_st_etc/"><code>QC_PHX_ST_ETC</code></a></td>
+<td>[문진5] 현재 또는 과거에 진단받은 위장질환이 있으십니까?-기타</td>
+<td>Questionnaire 5: Diagnosed now or in the past with disease of the gastrointestinal disease? other</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_cpo_yn/"><code>QC_PHX_CPO_YN</code></a></td>
+<td>[문진6] 현재 또는 과거에 진단받은 대장항문 질환이 있으십니까?-대장용종(폴립)</td>
+<td>Questionnaire 6: diagnosed now or in the past with colorectal or anal disease? Colorectal polyp</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_uc_yn/"><code>QC_PHX_UC_YN</code></a></td>
+<td>[문진6] 현재 또는 과거에 진단받은 대장항문 질환이 있으십니까?-궤양성 대장염</td>
+<td>Questionnaire 6: diagnosed now or in the past with colorectal or anal disease? Ulcerative colitis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_cd_yn/"><code>QC_PHX_CD_YN</code></a></td>
+<td>[문진6] 현재 또는 과거에 진단받은 대장 항문질환이 있으십니까?-크론병</td>
+<td>Questionnaire 6: diagnosed now or in the past with colorectal or anal disease? Crohn's disease</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_hmr_yn/"><code>QC_PHX_HMR_YN</code></a></td>
+<td>[문진6] 현재 또는 과거에 진단받은 대장 항문질환이 있으십니까?-치질(치핵,치열)</td>
+<td>Questionnaire 6: diagnosed now or in the past with colorectal or anal disease? Hemorrhoids or anal fissure</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_cra_yn/"><code>QC_PHX_CRA_YN</code></a></td>
+<td>[문진6] 현재 또는 과거에 진단받은 대장 항문질환이 있으십니까?-기타</td>
+<td>Questionnaire 6: diagnosed now or in the past with colorectal or anal disease? Other</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_hbvc_yn/"><code>QC_PHX_HBVC_YN</code></a></td>
+<td>[문진7] 간 질환이 있으십니까?-B형간염바이러스보유자</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_chb_yn/"><code>QC_PHX_CHB_YN</code></a></td>
+<td>[문진7] 간 질환이 있으십니까?-만성B형간염</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_chc_yn/"><code>QC_PHX_CHC_YN</code></a></td>
+<td>[문진7] 간 질환이 있으십니까?-만성C형간염</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_lc_yn/"><code>QC_PHX_LC_YN</code></a></td>
+<td>[문진7] 간 질환이 있으십니까?-간경화/간경변</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_lv_yn/"><code>QC_PHX_LV_YN</code></a></td>
+<td>[문진7] 간 질환이 있으십니까?-기타</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_copd_yn/"><code>QC_PHX_COPD_YN</code></a></td>
+<td>[문진8] 현재 또는 과거에 진단받은 폐질환이 있으십니까?-만성폐쇄성폐질환(만성기관지염,폐기종 등)</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_tb_yn/"><code>QC_PHX_TB_YN</code></a></td>
+<td>[문진8] 현재 또는 과거에 진단받은 폐질환이 있으십니까?-폐결핵</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_spn_yn/"><code>QC_PHX_SPN_YN</code></a></td>
+<td>[문진8] 현재 또는 과거에 진단받은 폐질환이 있으십니까?-폐결절</td>
+<td>Questionnaire 8: Diagnosed now or in the past with disease of the lung disease? lung nodule</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_ild_yn/"><code>QC_PHX_ILD_YN</code></a></td>
+<td>[문진8] 현재 또는 과거에 진단받은 폐질환이 있으십니까?-간질성폐질환</td>
+<td>Questionnaire 8: Diagnosed now or in the past with disease of the lung disease? interstitial lung disease</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_pneu_yn/"><code>QC_PHX_PNEU_YN</code></a></td>
+<td>[문진8] 현재 또는 과거에 진단받은 폐질환이 있으십니까?-진폐증</td>
+<td>Questionnaire 8: Diagnosed now or in the past with disease of the lung disease? pneumoconiosis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_phx_lu_yn/"><code>QC_PHX_LU_YN</code></a></td>
+<td>[문진8] 현재 또는 과거에 진단받은 폐질환이 있으십니까?-기타</td>
+<td>Questionnaire 8: Diagnosed now or in the past with disease of the lung disease? other</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_mnc_yn/"><code>QC_MNC_YN</code></a></td>
+<td>[문진9] 월경을 언제 시작하셨습니까?</td>
+<td>Questionnaire 9: When did your periods start?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_mnc_age/"><code>QC_MNC_AGE</code></a></td>
+<td>[문진9] 초경 시작 나이</td>
+<td>Questionnaire 9: Age at menarche</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_mns_yn/"><code>QC_MNS_YN</code></a></td>
+<td>[문진10] 현재 월경의 상태는 어떠십니까?</td>
+<td>Questionnaire 10: What is your current menstrual status?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_mnp_age/"><code>QC_MNP_AGE</code></a></td>
+<td>[문진10] 폐경 나이</td>
+<td>Questionnaire 10: age at menopause</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_ert_yn/"><code>QC_ERT_YN</code></a></td>
+<td>[문진11] 폐경 후 증상을 완화하기 위해서 호르몬 제제를 복용하고 계시거나 과거에 복용하신 적이 있습니까?</td>
+<td>Questionnaire 11: Are you taking, or have you taken, hormones for symptoms after menopause?</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_cq_rst_0923/qc_opll_yn/"><code>QC_OPLL_YN</code></a></td>
+<td>[문진15] 피임약을 복용하고 계시거나 과거에 복용하신 적이 있습니까?</td>
+<td>Questionnaire 15: Are you taking, or have you taken, oral contraceptives?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="stomach-screening-results-20072008">Stomach screening results, 2007–2008<a class="headerlink" href="#stomach-screening-results-20072008" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_암검진_위암0708. File <code>CS_GC_CST_RST_0708</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/exmd_bz_yyyy/"><code>EXMD_BZ_YYYY</code></a></td>
+<td>검진사업연도</td>
+<td>Screening year</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_dz_type/"><code>CST_UGI_DZ_TYPE</code></a></td>
+<td>위장조영촬영 병형</td>
+<td>Upper GI series Finding type</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_vrc/"><code>CST_UGI_VRC</code></a></td>
+<td>위장조영촬영 병형 기타_01. 식도/위 정맥류</td>
+<td>Upper GI series Finding, other_01. esophageal or gastric varices</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_espt/"><code>CST_UGI_ESPT</code></a></td>
+<td>위장조영촬영 병형 기타_02. 식도염</td>
+<td>Upper GI series Finding, other_02. esophagitis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_esdv/"><code>CST_UGI_ESDV</code></a></td>
+<td>위장조영촬영 병형 기타_03. 병형기타 식도게실</td>
+<td>Upper GI series Finding, other_03. other finding esophageal diverticulum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_escc/"><code>CST_UGI_ESCC</code></a></td>
+<td>위장조영촬영 병형 기타_04. 식도암</td>
+<td>Upper GI series Finding, other_04. esophageal cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_esst/"><code>CST_UGI_ESST</code></a></td>
+<td>위장조영촬영 병형 기타_05. 식도 점막하종양</td>
+<td>Upper GI series Finding, other_05. esophageal submucosal tumor</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_agst/"><code>CST_UGI_AGST</code></a></td>
+<td>위장조영촬영 병형 기타_06. 병형기타 급성위염</td>
+<td>Upper GI series Finding, other_06. other finding acute gastritis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_cgst/"><code>CST_UGI_CGST</code></a></td>
+<td>위장조영촬영 병형 기타_07. 병형기타 만성위염</td>
+<td>Upper GI series Finding, other_07. other finding chronic gastritis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_gsdv/"><code>CST_UGI_GSDV</code></a></td>
+<td>위장조영촬영 병형 기타_08. 병형기타 위게실</td>
+<td>Upper GI series Finding, other_08. other finding gastric diverticulum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_ddnt/"><code>CST_UGI_DDNT</code></a></td>
+<td>위장조영촬영 병형 기타_09. 병형기타 십이지장염</td>
+<td>Upper GI series Finding, other_09. other finding duodenitis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_dddv/"><code>CST_UGI_DDDV</code></a></td>
+<td>위장조영촬영 병형 기타_10. 병형기타 십이지장게실</td>
+<td>Upper GI series Finding, other_10. other finding duodenal diverticulum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_ncc_etc/"><code>CST_UGI_NCC_ETC</code></a></td>
+<td>위장조영촬영 병형 기타_11. 직접기입</td>
+<td>Upper GI series Finding, other_11. written in directly</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_fds/"><code>CST_UGI_FDS</code></a></td>
+<td>위장조영촬영 부위_01. 위저부</td>
+<td>Upper GI series site_01. gastric fundus</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_bdy/"><code>CST_UGI_BDY</code></a></td>
+<td>위장조영촬영 부위_02. 위체부</td>
+<td>Upper GI series site_02. gastric body</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_ant/"><code>CST_UGI_ANT</code></a></td>
+<td>위장조영촬영 부위_03. 위전정부</td>
+<td>Upper GI series site_03. gastric antrum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_crd/"><code>CST_UGI_CRD</code></a></td>
+<td>위장조영촬영 부위_04. 분문부</td>
+<td>Upper GI series site_04. cardia</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_lcv/"><code>CST_UGI_LCV</code></a></td>
+<td>위장조영촬영 부위_05. 소만</td>
+<td>Upper GI series site_05. lesser curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_gcv/"><code>CST_UGI_GCV</code></a></td>
+<td>위장조영촬영 부위_06. 대만</td>
+<td>Upper GI series site_06. greater curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_awl/"><code>CST_UGI_AWL</code></a></td>
+<td>위장조영촬영 부위_07. 전벽</td>
+<td>Upper GI series site_07. anterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_ugi_pwl/"><code>CST_UGI_PWL</code></a></td>
+<td>위장조영촬영 부위_08. 후벽</td>
+<td>Upper GI series site_08. posterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_dz_type/"><code>CST_GSC_DZ_TYPE</code></a></td>
+<td>상부소화관내시경 병형</td>
+<td>Upper endoscopy Finding type</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_espt/"><code>CST_GSC_ESPT</code></a></td>
+<td>상부소화관내시경 병형 기타_01. 식도염</td>
+<td>Upper endoscopy Finding, other_01. esophagitis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_esdv/"><code>CST_GSC_ESDV</code></a></td>
+<td>상부소화관내시경 병형 기타_02. 식도게실</td>
+<td>Upper endoscopy Finding, other_02. esophageal diverticulum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_escc/"><code>CST_GSC_ESCC</code></a></td>
+<td>상부소화관내시경 병형 기타_03. 식도암</td>
+<td>Upper endoscopy Finding, other_03. esophageal cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_esst/"><code>CST_GSC_ESST</code></a></td>
+<td>상부소화관내시경 병형 기타_04. 식도 점막하종양</td>
+<td>Upper endoscopy Finding, other_04. esophageal submucosal tumor</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_agst/"><code>CST_GSC_AGST</code></a></td>
+<td>상부소화관내시경 병형 기타_05. 급성위염</td>
+<td>Upper endoscopy Finding, other_05. acute gastritis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_cgst/"><code>CST_GSC_CGST</code></a></td>
+<td>상부소화관내시경 병형 기타_06. 만성위염</td>
+<td>Upper endoscopy Finding, other_06. chronic gastritis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_gsdv/"><code>CST_GSC_GSDV</code></a></td>
+<td>상부소화관내시경 병형 기타_07. 위게실</td>
+<td>Upper endoscopy Finding, other_07. gastric diverticulum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_ddnt/"><code>CST_GSC_DDNT</code></a></td>
+<td>상부소화관내시경 병형 기타_08. 십이지장염</td>
+<td>Upper endoscopy Finding, other_08. duodenitis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_dddv/"><code>CST_GSC_DDDV</code></a></td>
+<td>상부소화관내시경 병형 기타_09. 십이지장게실</td>
+<td>Upper endoscopy Finding, other_09. duodenal diverticulum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_fds/"><code>CST_GSC_FDS</code></a></td>
+<td>상부소화관내시경 부위_01. 위저부</td>
+<td>Upper endoscopy site_01. gastric fundus</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_bdy/"><code>CST_GSC_BDY</code></a></td>
+<td>상부소화관내시경 부위_02. 위체부</td>
+<td>Upper endoscopy site_02. gastric body</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_ant/"><code>CST_GSC_ANT</code></a></td>
+<td>상부소화관내시경 부위_03. 위전정부</td>
+<td>Upper endoscopy site_03. gastric antrum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_crd/"><code>CST_GSC_CRD</code></a></td>
+<td>상부소화관내시경 부위_04. 분문부</td>
+<td>Upper endoscopy site_04. cardia</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_lcv/"><code>CST_GSC_LCV</code></a></td>
+<td>상부소화관내시경 부위_05. 소만</td>
+<td>Upper endoscopy site_05. lesser curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_gcv/"><code>CST_GSC_GCV</code></a></td>
+<td>상부소화관내시경 부위_06. 대만</td>
+<td>Upper endoscopy site_06. greater curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_awl/"><code>CST_GSC_AWL</code></a></td>
+<td>상부소화관내시경 부위_07. 전벽</td>
+<td>Upper endoscopy site_07. anterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_pwl/"><code>CST_GSC_PWL</code></a></td>
+<td>상부소화관내시경 부위_08. 후벽</td>
+<td>Upper endoscopy site_08. posterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gsc_cc_etc/"><code>CST_GSC_CC_ETC</code></a></td>
+<td>상부소화관내시경 부위_09. 기타</td>
+<td>Upper endoscopy site_09. other</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_gbx_dz_type/"><code>CST_GBX_DZ_TYPE</code></a></td>
+<td>위 조직진단결과</td>
+<td>Stomach histologic result</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_jdg_cst/"><code>CST_JDG_CST</code></a></td>
+<td>위암종합판정</td>
+<td>Overall stomach-cancer judgment</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0708/cst_cst_fee_yn/"><code>CST_CST_FEE_YN</code></a></td>
+<td>위암진찰료포함여부</td>
+<td>Stomach-cancer consultation fee included</td>
+</tr>
+</tbody>
+</table>
+<h2 id="stomach-screening-results-20092023">Stomach screening results, 2009–2023<a class="headerlink" href="#stomach-screening-results-20092023" title="Permanent link">&para;</a></h2>
+<p>암_공공_병기조사_위암_DB_암검진_위암0923. File <code>CS_GC_CST_RST_0923</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>한글</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/exmd_bz_yyyy/"><code>EXMD_BZ_YYYY</code></a></td>
+<td>검진사업연도</td>
+<td>Screening year</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi_type/"><code>CST_UGI_TYPE</code></a></td>
+<td>위장조영검사 검사방법</td>
+<td>Upper GI series method</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi1_dz_type/"><code>CST_UGI1_DZ_TYPE</code></a></td>
+<td>위장조영검사 판독소견(1set)</td>
+<td>Upper GI series Reading(1set)</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi1_fds/"><code>CST_UGI1_FDS</code></a></td>
+<td>위장조영검사 병변위치_01. 위저부</td>
+<td>Upper GI series Lesion site_01. gastric fundus</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi1_bdy/"><code>CST_UGI1_BDY</code></a></td>
+<td>위장조영검사 병변위치_02. 위체부</td>
+<td>Upper GI series Lesion site_02. gastric body</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi1_ant/"><code>CST_UGI1_ANT</code></a></td>
+<td>위장조영검사 병변위치_03. 위전정부</td>
+<td>Upper GI series Lesion site_03. gastric antrum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi1_crd/"><code>CST_UGI1_CRD</code></a></td>
+<td>위장조영검사 병변위치_04. 위분문부</td>
+<td>Upper GI series Lesion site_04. gastric cardia</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi1_lcv/"><code>CST_UGI1_LCV</code></a></td>
+<td>위장조영검사 병변위치_05. 소만</td>
+<td>Upper GI series Lesion site_05. lesser curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi1_gcv/"><code>CST_UGI1_GCV</code></a></td>
+<td>위장조영검사 병변위치_06. 대만</td>
+<td>Upper GI series Lesion site_06. greater curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi1_awl/"><code>CST_UGI1_AWL</code></a></td>
+<td>위장조영검사 병변위치_07. 전벽</td>
+<td>Upper GI series Lesion site_07. anterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi1_pwl/"><code>CST_UGI1_PWL</code></a></td>
+<td>위장조영검사 병변위치_08. 후벽</td>
+<td>Upper GI series Lesion site_08. posterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi2_dz_type/"><code>CST_UGI2_DZ_TYPE</code></a></td>
+<td>위장조영검사 판독소견(2set)</td>
+<td>Upper GI series Reading(2set)</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi2_fds/"><code>CST_UGI2_FDS</code></a></td>
+<td>위장조영검사 병변위치_01. 위저부</td>
+<td>Upper GI series Lesion site_01. gastric fundus</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi2_bdy/"><code>CST_UGI2_BDY</code></a></td>
+<td>위장조영검사 병변위치_02. 위체부</td>
+<td>Upper GI series Lesion site_02. gastric body</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi2_ant/"><code>CST_UGI2_ANT</code></a></td>
+<td>위장조영검사 병변위치_03. 위전정부</td>
+<td>Upper GI series Lesion site_03. gastric antrum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi2_crd/"><code>CST_UGI2_CRD</code></a></td>
+<td>위장조영검사 병변위치_04. 위분문부</td>
+<td>Upper GI series Lesion site_04. gastric cardia</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi2_lcv/"><code>CST_UGI2_LCV</code></a></td>
+<td>위장조영검사 병변위치_05. 소만</td>
+<td>Upper GI series Lesion site_05. lesser curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi2_gcv/"><code>CST_UGI2_GCV</code></a></td>
+<td>위장조영검사 병변위치_06. 대만</td>
+<td>Upper GI series Lesion site_06. greater curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi2_awl/"><code>CST_UGI2_AWL</code></a></td>
+<td>위장조영검사 병변위치_07. 전벽</td>
+<td>Upper GI series Lesion site_07. anterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi2_pwl/"><code>CST_UGI2_PWL</code></a></td>
+<td>위장조영검사 병변위치_08. 후벽</td>
+<td>Upper GI series Lesion site_08. posterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi3_dz_type/"><code>CST_UGI3_DZ_TYPE</code></a></td>
+<td>위장조영검사 판독소견(3set)</td>
+<td>Upper GI series Reading(3set)</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi3_fds/"><code>CST_UGI3_FDS</code></a></td>
+<td>위장조영검사 병변위치_01. 위저부</td>
+<td>Upper GI series Lesion site_01. gastric fundus</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi3_bdy/"><code>CST_UGI3_BDY</code></a></td>
+<td>위장조영검사 병변위치_02. 위체부</td>
+<td>Upper GI series Lesion site_02. gastric body</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi3_ant/"><code>CST_UGI3_ANT</code></a></td>
+<td>위장조영검사 병변위치_03. 위전정부</td>
+<td>Upper GI series Lesion site_03. gastric antrum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi3_crd/"><code>CST_UGI3_CRD</code></a></td>
+<td>위장조영검사 병변위치_04. 위분문부</td>
+<td>Upper GI series Lesion site_04. gastric cardia</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi3_lcv/"><code>CST_UGI3_LCV</code></a></td>
+<td>위장조영검사 병변위치_05. 소만</td>
+<td>Upper GI series Lesion site_05. lesser curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi3_gcv/"><code>CST_UGI3_GCV</code></a></td>
+<td>위장조영검사 병변위치_06. 대만</td>
+<td>Upper GI series Lesion site_06. greater curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi3_awl/"><code>CST_UGI3_AWL</code></a></td>
+<td>위장조영검사 병변위치_07. 전벽</td>
+<td>Upper GI series Lesion site_07. anterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi3_pwl/"><code>CST_UGI3_PWL</code></a></td>
+<td>위장조영검사 병변위치_08. 후벽</td>
+<td>Upper GI series Lesion site_08. posterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi_vrc/"><code>CST_UGI_VRC</code></a></td>
+<td>판독소견 기타_01. 식도/위 정맥류</td>
+<td>Reading other_01. esophageal or gastric varices</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi_espt/"><code>CST_UGI_ESPT</code></a></td>
+<td>판독소견 기타_02. 식도염</td>
+<td>Reading other_02. esophagitis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi_esst/"><code>CST_UGI_ESST</code></a></td>
+<td>판독소견 기타_03. 식도 점막하종양</td>
+<td>Reading other_03. esophageal submucosal tumor</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi_escc/"><code>CST_UGI_ESCC</code></a></td>
+<td>판독소견 기타_04. 식도암</td>
+<td>Reading other_04. esophageal cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi_dduc/"><code>CST_UGI_DDUC</code></a></td>
+<td>판독소견 기타_05. 십이지장 궤양</td>
+<td>Reading other_05. duodenal ulcer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi_ddmt/"><code>CST_UGI_DDMT</code></a></td>
+<td>판독소견 기타_06. 십이지장 악성종양</td>
+<td>Reading other_06. malignant tumor of the duodenum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi_ddst/"><code>CST_UGI_DDST</code></a></td>
+<td>판독소견 기타_07. 십이지장 점막하종양</td>
+<td>Reading other_07. duodenal submucosal tumor</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_ugi_ncc_etc/"><code>CST_UGI_NCC_ETC</code></a></td>
+<td>판독소견 기타_08. 직접기입</td>
+<td>Reading other_08. written in directly</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc1_dz_type/"><code>CST_GSC1_DZ_TYPE</code></a></td>
+<td>위내시경 관찰소견(1set)</td>
+<td>Gastroscopy Observation(1set)</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc1_fds/"><code>CST_GSC1_FDS</code></a></td>
+<td>위내시경 병변위치_01. 위저부</td>
+<td>Gastroscopy Lesion site_01. gastric fundus</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc1_bdy/"><code>CST_GSC1_BDY</code></a></td>
+<td>위내시경 병변위치_02. 위체부</td>
+<td>Gastroscopy Lesion site_02. gastric body</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc1_ant/"><code>CST_GSC1_ANT</code></a></td>
+<td>위내시경 병변위치_03. 위전정부</td>
+<td>Gastroscopy Lesion site_03. gastric antrum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc1_crd/"><code>CST_GSC1_CRD</code></a></td>
+<td>위내시경 병변위치_04. 위분문부</td>
+<td>Gastroscopy Lesion site_04. gastric cardia</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc1_lcv/"><code>CST_GSC1_LCV</code></a></td>
+<td>위내시경 병변위치_05. 소만</td>
+<td>Gastroscopy Lesion site_05. lesser curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc1_gcv/"><code>CST_GSC1_GCV</code></a></td>
+<td>위내시경 병변위치_06. 대만</td>
+<td>Gastroscopy Lesion site_06. greater curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc1_awl/"><code>CST_GSC1_AWL</code></a></td>
+<td>위내시경 병변위치_07. 전벽</td>
+<td>Gastroscopy Lesion site_07. anterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc1_pwl/"><code>CST_GSC1_PWL</code></a></td>
+<td>위내시경 병변위치_08. 후벽</td>
+<td>Gastroscopy Lesion site_08. posterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc2_dz_type/"><code>CST_GSC2_DZ_TYPE</code></a></td>
+<td>위내시경 관찰소견(2set)</td>
+<td>Gastroscopy Observation(2set)</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc2_fds/"><code>CST_GSC2_FDS</code></a></td>
+<td>위내시경 병변위치_01. 위저부</td>
+<td>Gastroscopy Lesion site_01. gastric fundus</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc2_bdy/"><code>CST_GSC2_BDY</code></a></td>
+<td>위내시경 병변위치_02. 위체부</td>
+<td>Gastroscopy Lesion site_02. gastric body</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc2_ant/"><code>CST_GSC2_ANT</code></a></td>
+<td>위내시경 병변위치_03. 위전정부</td>
+<td>Gastroscopy Lesion site_03. gastric antrum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc2_crd/"><code>CST_GSC2_CRD</code></a></td>
+<td>위내시경 병변위치_04. 위분문부</td>
+<td>Gastroscopy Lesion site_04. gastric cardia</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc2_lcv/"><code>CST_GSC2_LCV</code></a></td>
+<td>위내시경 병변위치_05. 소만</td>
+<td>Gastroscopy Lesion site_05. lesser curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc2_gcv/"><code>CST_GSC2_GCV</code></a></td>
+<td>위내시경 병변위치_06. 대만</td>
+<td>Gastroscopy Lesion site_06. greater curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc2_awl/"><code>CST_GSC2_AWL</code></a></td>
+<td>위내시경 병변위치_07. 전벽</td>
+<td>Gastroscopy Lesion site_07. anterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc2_pwl/"><code>CST_GSC2_PWL</code></a></td>
+<td>위내시경 병변위치_08. 후벽</td>
+<td>Gastroscopy Lesion site_08. posterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc3_dz_type/"><code>CST_GSC3_DZ_TYPE</code></a></td>
+<td>위내시경 관찰소견(3set)</td>
+<td>Gastroscopy Observation(3set)</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc3_fds/"><code>CST_GSC3_FDS</code></a></td>
+<td>위내시경 병변위치_01. 위저부</td>
+<td>Gastroscopy Lesion site_01. gastric fundus</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc3_bdy/"><code>CST_GSC3_BDY</code></a></td>
+<td>위내시경 병변위치_02. 위체부</td>
+<td>Gastroscopy Lesion site_02. gastric body</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc3_ant/"><code>CST_GSC3_ANT</code></a></td>
+<td>위내시경 병변위치_03. 위전정부</td>
+<td>Gastroscopy Lesion site_03. gastric antrum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc3_crd/"><code>CST_GSC3_CRD</code></a></td>
+<td>위내시경 병변위치_04. 위분문부</td>
+<td>Gastroscopy Lesion site_04. gastric cardia</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc3_lcv/"><code>CST_GSC3_LCV</code></a></td>
+<td>위내시경 병변위치_05. 소만</td>
+<td>Gastroscopy Lesion site_05. lesser curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc3_gcv/"><code>CST_GSC3_GCV</code></a></td>
+<td>위내시경 병변위치_06. 대만</td>
+<td>Gastroscopy Lesion site_06. greater curvature</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc3_awl/"><code>CST_GSC3_AWL</code></a></td>
+<td>위내시경 병변위치_07. 전벽</td>
+<td>Gastroscopy Lesion site_07. anterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc3_pwl/"><code>CST_GSC3_PWL</code></a></td>
+<td>위내시경 병변위치_08. 후벽</td>
+<td>Gastroscopy Lesion site_08. posterior wall</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc_esvrc/"><code>CST_GSC_ESVRC</code></a></td>
+<td>위내시경 관찰소견 기타_01. 식도/위 정맥류</td>
+<td>Gastroscopy Observation other_01. esophageal or gastric varices</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc_espt/"><code>CST_GSC_ESPT</code></a></td>
+<td>위내시경 관찰소견 기타_02. 식도염</td>
+<td>Gastroscopy Observation other_02. esophagitis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc_esst/"><code>CST_GSC_ESST</code></a></td>
+<td>위내시경 관찰소견 기타_03. 식도 점막하종양</td>
+<td>Gastroscopy Observation other_03. esophageal submucosal tumor</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc_escc/"><code>CST_GSC_ESCC</code></a></td>
+<td>위내시경 관찰소견 기타_04. 식도암</td>
+<td>Gastroscopy Observation other_04. esophageal cancer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc_dduc/"><code>CST_GSC_DDUC</code></a></td>
+<td>위내시경 관찰소견 기타_05. 십이지장 궤양</td>
+<td>Gastroscopy Observation other_05. duodenal ulcer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc_ddmt/"><code>CST_GSC_DDMT</code></a></td>
+<td>위내시경 관찰소견 기타_06. 십이지장 악성종양</td>
+<td>Gastroscopy Observation other_06. malignant tumor of the duodenum</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc_ddst/"><code>CST_GSC_DDST</code></a></td>
+<td>위내시경 관찰소견 기타_07. 십이지장 점막하종양</td>
+<td>Gastroscopy Observation other_07. duodenal submucosal tumor</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_gsc_bx_yn/"><code>CST_GSC_BX_YN</code></a></td>
+<td>위 조직진단필요</td>
+<td>Stomach histology needed</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_rst/"><code>CST_BX_RST</code></a></td>
+<td>위 조직진단결과</td>
+<td>Stomach histologic result</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_cnt_c/"><code>CST_BX_CNT_C</code></a></td>
+<td>병리조직검사 개수</td>
+<td>Number of pathology specimens</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_tad/"><code>CST_BX_TAD</code></a></td>
+<td>조직진단 암_01. 관상샘암종(고분화/중분화/저분화)</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_tad_h/"><code>CST_BX_TAD_H</code></a></td>
+<td>조직진단 암_01. 관상샘암종(고분화)</td>
+<td>Histologic diagnosis, cancer_01. tubular adenocarcinoma, well differentiated</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_tad_m/"><code>CST_BX_TAD_M</code></a></td>
+<td>조직진단 암_01. 관상샘암종(중분화)</td>
+<td>Histologic diagnosis, cancer_01. tubular adenocarcinoma, moderately differentiated</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_tad_l/"><code>CST_BX_TAD_L</code></a></td>
+<td>조직진단 암_01. 관상샘암종(저분화)</td>
+<td>Histologic diagnosis, cancer_01. tubular adenocarcinoma, poorly differentiated</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_pac/"><code>CST_BX_PAC</code></a></td>
+<td>조직진단 암_02. 유두상샘암종</td>
+<td>Histologic diagnosis, cancer_02. papillary adenocarcinoma</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_srcc/"><code>CST_BX_SRCC</code></a></td>
+<td>조직진단 암_03. 반지세포암종</td>
+<td>Histologic diagnosis, cancer_03. signet-ring cell carcinoma</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_glp/"><code>CST_BX_GLP</code></a></td>
+<td>조직진단 암_04. 위림프종(저도/고도)</td>
+<td>Histologic diagnosis, cancer_04. gastric lymphoma (low or high grade)</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_glp_l/"><code>CST_BX_GLP_L</code></a></td>
+<td>조직진단 암_04. 위림프종(저도)</td>
+<td>Histologic diagnosis, cancer_04. gastric lymphoma, low grade</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_glp_h/"><code>CST_BX_GLP_H</code></a></td>
+<td>조직진단 암_04. 위림프종(고도)</td>
+<td>Histologic diagnosis, cancer_04. gastric lymphoma, high grade</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_mc/"><code>CST_BX_MC</code></a></td>
+<td>조직진단 암_05. 점액(샘)암종</td>
+<td>Histologic diagnosis, cancer_05. mucinous adenocarcinoma</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_asqcc/"><code>CST_BX_ASQCC</code></a></td>
+<td>조직진단 암_06. 샘편평상피암종</td>
+<td>Histologic diagnosis, cancer_06. adenosquamous carcinoma</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_sqcc/"><code>CST_BX_SQCC</code></a></td>
+<td>조직진단 암_07. 편평상피암종</td>
+<td>Histologic diagnosis, cancer_07. squamous cell carcinoma</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_scc/"><code>CST_BX_SCC</code></a></td>
+<td>조직진단 암_08. 소세포암종</td>
+<td>Histologic diagnosis, cancer_08. small cell carcinoma</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_udc/"><code>CST_BX_UDC</code></a></td>
+<td>조직진단 암_09. 미분화암종</td>
+<td>Histologic diagnosis, cancer_09. undifferentiated carcinoma</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_net/"><code>CST_BX_NET</code></a></td>
+<td>조직진단 암_10. 신경내분비종양</td>
+<td>Histologic diagnosis, cancer_10. neuroendocrine tumor</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_cc_etc/"><code>CST_BX_CC_ETC</code></a></td>
+<td>조직진단 암_11. 직접기입</td>
+<td>Histologic diagnosis, cancer_11. written in directly</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_nept/"><code>CST_BX_NEPT</code></a></td>
+<td>조직진단 기타_01. 위의 비상피성종양</td>
+<td>Histologic diagnosis, other_01. nonepithelial tumor of the stomach</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_espt/"><code>CST_BX_ESPT</code></a></td>
+<td>조직진단 기타_02. 식도염</td>
+<td>Histologic diagnosis, other_02. esophagitis</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_escc/"><code>CST_BX_ESCC</code></a></td>
+<td>조직진단 기타_03. 식도 암종</td>
+<td>Histologic diagnosis, other_03. esophageal carcinoma</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_esst/"><code>CST_BX_ESST</code></a></td>
+<td>조직진단 기타_04. 식도 점막하종양</td>
+<td>Histologic diagnosis, other_04. esophageal submucosal tumor</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_dduc/"><code>CST_BX_DDUC</code></a></td>
+<td>조직진단 기타_05. 십이지장 궤양</td>
+<td>Histologic diagnosis, other_05. duodenal ulcer</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_ddcc/"><code>CST_BX_DDCC</code></a></td>
+<td>조직진단 기타_06. 십이지장 암종</td>
+<td>Histologic diagnosis, other_06. duodenal carcinoma</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_ddst/"><code>CST_BX_DDST</code></a></td>
+<td>조직진단 기타_07. 십이지장 점막하종양</td>
+<td>Histologic diagnosis, other_07. duodenal submucosal tumor</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_bx_ncc_etc/"><code>CST_BX_NCC_ETC</code></a></td>
+<td>조직진단 기타_08. 직접기입</td>
+<td>Histologic diagnosis, other 08, written in directly</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_jdg_cst/"><code>CST_JDG_CST</code></a></td>
+<td>위암종합판정</td>
+<td>Overall stomach-cancer judgment</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_phx_cst/"><code>CST_PHX_CST</code></a></td>
+<td>기존 위암환자</td>
+<td>Already a stomach-cancer patient</td>
+</tr>
+<tr>
+<td><a href="cs_gc_cst_rst_0923/cst_cst_fee_yn/"><code>CST_CST_FEE_YN</code></a></td>
+<td>위암진찰료포함여부</td>
+<td>Stomach-cancer consultation fee included</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../sample/pancreas/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Pancreas">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Pancreas
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../breast/" class="md-footer__link md-footer__link--next" aria-label="Next: Breast">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Breast
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Content licensed under CC BY 4.0. Not affiliated with the Ministry of Health and Welfare, the Korea Health Information Service, or the National Cancer Center.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.action.edit", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

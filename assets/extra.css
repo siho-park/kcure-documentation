@@ -1,0 +1,36 @@
+/* Blog posts show the author's name and affiliation without a picture */
+.md-post__profile .md-author {
+  display: none;
+}
+
+.md-typeset ul.post-list li {
+  margin-bottom: 0.4em;
+}
+
+/* Variable names in tables should not wrap */
+.md-typeset td code {
+  white-space: nowrap;
+}
+
+/* Break Korean text between words, not inside them */
+.md-typeset td,
+.md-typeset th {
+  word-break: keep-all;
+}
+
+/* Wider page for the comparison tables */
+.md-grid {
+  max-width: 1440px;
+}
+
+/* Darker green for the top bar. In-text links keep the theme green. */
+.md-header,
+.md-tabs {
+  background-color: #1b5e20;
+}
+
+/* On a variable page the dataset stays highlighted in the left menu. */
+.md-sidebar--primary .md-nav__item--active > a.md-nav__link {
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+}
