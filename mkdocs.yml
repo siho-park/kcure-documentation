@@ -1,0 +1,154 @@
+site_name: K-CURE Data Documentation
+site_description: Unofficial documentation for the cancer and health data released through the Korean K-CURE portal
+site_author: Siho Park
+site_url: https://siho-park.github.io/kcure-documentation/
+repo_url: https://github.com/siho-park/kcure-documentation
+repo_name: kcure-documentation
+edit_uri: edit/main/docs/
+copyright: Content licensed under CC BY 4.0. Not affiliated with the Ministry of Health and Welfare, the Korea Health Information Service, or the National Cancer Center.
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font:
+    text: Noto Sans KR
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
+hooks:
+  - scripts/nav_context.py
+  - scripts/blog_categories.py
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ko
+  - blog:
+      blog_dir: blog
+      post_url_format: "{slug}"
+      archive: false
+      pagination: false
+  - gen-files:
+      scripts:
+        - scripts/gen_codebook.py
+  - literate-nav:
+      nav_file: SUMMARY.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - assets/extra.css
+
+extra:
+  blog_categories:
+    - Getting started
+
+validation:
+  links:
+    anchors: warn
+
+nav:
+  - Home:
+      - index.md
+      - Contributing: about/contributing.md
+      - How to cite: about/cite.md
+  - Program and data:
+      - overview/index.md
+      - The K-CURE project: overview/project.md
+      - What the portal releases: overview/products.md
+      - Applying for data: overview/access.md
+      - Using the data: overview/using.md
+  - Datasets:
+      - datasets/index.md
+      - Cancer Public Library:
+          - datasets/public-library/index.md
+          - Cancer registration: datasets/public-library/rgst.md
+          - Death: datasets/public-library/death.md
+          - Eligibility and premium: datasets/public-library/bfc.md
+          - Claims:
+              - Claim statement (T200): datasets/public-library/t200.md
+              - Services (T300): datasets/public-library/t300.md
+              - Diagnoses (T400): datasets/public-library/t400.md
+              - Outpatient prescriptions (T530): datasets/public-library/t530.md
+          - General health examination:
+              - Checkup target (G1E_OBJ): datasets/public-library/g1e-obj.md
+              - Questionnaire, 2007–2008 (G1Q_0708): datasets/public-library/g1q-0708.md
+              - Questionnaire, 2009–2017 (G1Q_0917): datasets/public-library/g1q-0917.md
+              - Questionnaire, 2018–2024 (G1Q_1824): datasets/public-library/g1q-1824.md
+              - Results (G1E): datasets/public-library/g1e.md
+          - Cancer screening:
+              - Questionnaire, 2007–2008 (CQ_RST_0708): datasets/public-library/cq-rst-0708.md
+              - Questionnaire, 2009–2024 (CQ_RST_0924): datasets/public-library/cq-rst-0924.md
+              - Breast, 2007–2008 (CBR_RST_0708): datasets/public-library/cbr-rst-0708.md
+              - Breast, 2009–2024 (CBR_RST_0924): datasets/public-library/cbr-rst-0924.md
+              - Colorectal, 2007–2008 (CCR_RST_0708): datasets/public-library/ccr-rst-0708.md
+              - Colorectal, 2009–2024 (CCR_RST_0924): datasets/public-library/ccr-rst-0924.md
+              - Cervical, 2007–2008 (CCX_RST_0708): datasets/public-library/ccx-rst-0708.md
+              - Cervical, 2009–2024 (CCX_RST_0924): datasets/public-library/ccx-rst-0924.md
+              - Liver, 2007–2008 (CLV_RST_0708): datasets/public-library/clv-rst-0708.md
+              - Liver, 2009–2024 (CLV_RST_0924): datasets/public-library/clv-rst-0924.md
+              - Stomach, 2007–2008 (CST_RST_0708): datasets/public-library/cst-rst-0708.md
+              - Stomach, 2009–2024 (CST_RST_0924): datasets/public-library/cst-rst-0924.md
+          - COVID-19:
+              - Cases (COVID_PT): datasets/public-library/covid-pt.md
+              - Vaccination (COVID_VAC): datasets/public-library/covid-vac.md
+          - Sample: datasets/public-library/sample.md
+      - Clinical library:
+          - datasets/clinical/index.md
+          - Hospital cancer registration: datasets/clinical/cncr-rgst.md
+      - Combined library: datasets/combined.md
+      - Specialized data: datasets/specialized.md
+      - Health and medical data: datasets/health.md
+      - Sources and versions: datasets/sources.md
+  - Variables: variables/
+  - Research notes:
+      - blog/index.md
+  - Glossary: glossary.md
+  - References: references.md

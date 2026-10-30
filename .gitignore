@@ -1,0 +1,8 @@
+site/
+.venv/
+venv/
+__pycache__/
+.cache/
+
+# Official manuals and dictionaries, which are not ours to republish
+database/
